@@ -1,1 +1,36 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Harness Elite Reports – 2025-10-24</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 2rem; background: #fff; color: #333; }
+    h1 { margin-bottom: 1rem; }
+    ul { list-style: none; padding: 0; }
+    li { margin: 0.4rem 0; }
+    a { color: #0645AD; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <h1>Harness Elite Reports — 2025-10-24</h1>
+  <ul id="file-list"></ul>
+  <script>
+    async function loadFiles() {
+      const res = await fetch('.');
+      const text = await res.text();
+      const matches = [...text.matchAll(/href="([^"]+\.pdf)"/g)];
+      const ul = document.getElementById('file-list');
+      for (const m of matches) {
+        const f = m[1];
+        if (f.startsWith('http') || f.startsWith('?')) continue;
+        const li = document.createElement('li');
+        li.innerHTML = `<a href="${f}">${f}</a>`;
+        ul.appendChild(li);
+      }
+    }
+    loadFiles();
+  </script>
+</body>
+</html>
