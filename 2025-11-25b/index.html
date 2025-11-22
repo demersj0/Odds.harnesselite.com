@@ -1,1 +1,263 @@
 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Paired Race Index</title>
+<style>
+body { font-family: Arial, sans-serif; padding: 20px; }
+h1 { font-size: 26px; }
+.pair-block { margin-bottom: 28px; }
+.file { margin-left: 20px; }
+.time { font-weight: bold; }
+a { text-decoration: none; color: #0645AD; }
+a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+
+<h1>Paired Race PDF Index (Sorted by Post Time)</h1>
+
+<script>
+// FULL FILENAMES FROM YOUR MESSAGE — EXACTLY AS GIVEN
+let files = [
+"100-PRC-RACE1-PACE.pdf",
+"1005-CNML-RACE11-PACE.pdf",
+"1005-M-RACE10-PACE.pdf",
+"1005-YR-RACE11-TROT.pdf",
+"1006-HOP-RACE13-PACE.pdf",
+"1012-WBSB-RACE10-PACE.pdf",
+"1028-CNML-RACE12-PACE.pdf",
+"1030-M-RACE11-PACE.pdf",
+"105-MEA-RACE2-TROT.pdf",
+"1055-M-RACE12-PACE.pdf",
+"109-PHL-RACE3-PACE.pdf",
+"1120-M-RACE13-TROT.pdf",
+"1145-M-RACE14-PACE.pdf",
+"120-PRC-RACE2-PACE.pdf",
+"1225-PHL-RACE1-PACE.pdf",
+"1245-MEA-RACE1-PACE.pdf",
+"1247-PHL-RACE2-PACE.pdf",
+"125-MEA-RACE3-PACE.pdf",
+"131-PHL-RACE4-PACE.pdf",
+"140-PRC-RACE3-PACE.pdf",
+"145-MEA-RACE4-PACE.pdf",
+"153-PHL-RACE5-PACE.pdf",
+"200-PRC-RACE4-PACE.pdf",
+"205-MEA-RACE5-PACE.pdf",
+"215-PHL-RACE6-PACE.pdf",
+"220-PRC-RACE5-PACE.pdf",
+"225-MEA-RACE6-PACE.pdf",
+"237-PHL-RACE7-PACE.pdf",
+"240-PRC-RACE6-PACE.pdf",
+"245-MEA-RACE7-PACE.pdf",
+"259-PHL-RACE8-PACE.pdf",
+"300-PRC-RACE7-PACE.pdf",
+"305-MEA-RACE8-PACE.pdf",
+"320-PRC-RACE8-PACE.pdf",
+"321-PHL-RACE9-PACE.pdf",
+"325-MEA-RACE9-TROT.pdf",
+"340-PRC-RACE9-PACE.pdf",
+"343-PHL-RACE10-PACE.pdf",
+"345-MEA-RACE10-PACE.pdf",
+"400-DTN-RACE1-PACE.pdf",
+"405-MEA-RACE11-PACE.pdf",
+"405-PHL-RACE11-PACE.pdf",
+"420-DTN-RACE2-PACE.pdf",
+"425-MEA-RACE12-TROT.pdf",
+"427-PHL-RACE12-PACE.pdf",
+"440-DTN-RACE3-PACE.pdf",
+"445-MEA-RACE13-PACE.pdf",
+"449-PHL-RACE13-TROT.pdf",
+"500-DTN-RACE4-PACE.pdf",
+"505-MEA-RACE14-TROT.pdf",
+"511-PHL-RACE14-PACE.pdf",
+"520-DTN-RACE5-TROT.pdf",
+"525-MEA-RACE15-PACE.pdf",
+"530-HOP-RACE1-PACE.pdf",
+"540-DTN-RACE6-PACE.pdf",
+"550-LON-RACE1-PACE.pdf",
+"553-HOP-RACE2-PACE.pdf",
+"600-BTVA-RACE1-TROT.pdf",
+"600-DTN-RACE7-TROT.pdf",
+"613-LON-RACE2-PACE.pdf",
+"615-CNML-RACE1-PACE.pdf",
+"616-HOP-RACE3-PACE.pdf",
+"620-BTVA-RACE2-PACE.pdf",
+"620-DTN-RACE8-PACE.pdf",
+"620-M-RACE1-PACE.pdf",
+"635-WBSB-RACE1-PACE.pdf",
+"636-LON-RACE3-PACE.pdf",
+"638-CNML-RACE2-PACE.pdf",
+"639-HOP-RACE4-PACE.pdf",
+"640-BTVA-RACE3-TROT.pdf",
+"640-DTN-RACE9-PACE.pdf",
+"645-M-RACE2-PACE.pdf",
+"645-YR-RACE1-TROT.pdf",
+"659-LON-RACE4-PACE.pdf",
+"700-BTVA-RACE4-PACE.pdf",
+"700-DTN-RACE10-PACE.pdf",
+"701-CNML-RACE3-PACE.pdf",
+"702-HOP-RACE5-PACE.pdf",
+"705-YR-RACE2-PACE.pdf",
+"708-WBSB-RACE2-TROT.pdf",
+"710-M-RACE3-TROT.pdf",
+"720-BTVA-RACE5-TROT.pdf",
+"720-DTN-RACE11-PACE.pdf",
+"722-LON-RACE5-PACE.pdf",
+"724-CNML-RACE4-PACE.pdf",
+"725-HOP-RACE6-PACE.pdf",
+"725-YR-RACE3-PACE.pdf",
+"731-WBSB-RACE3-PACE.pdf",
+"735-M-RACE4-PACE.pdf",
+"740-BTVA-RACE6-PACE.pdf",
+"740-DTN-RACE12-TROT.pdf",
+"745-LON-RACE6-PACE.pdf",
+"745-YR-RACE4-TROT.pdf",
+"747-CNML-RACE5-PACE.pdf",
+"748-HOP-RACE7-TROT.pdf",
+"754-WBSB-RACE4-TROT.pdf",
+"800-BTVA-RACE7-TROT.pdf",
+"800-DTN-RACE13-PACE.pdf",
+"800-M-RACE5-PACE.pdf",
+"805-YR-RACE5-TROT.pdf",
+"808-LON-RACE7-PACE.pdf",
+"810-CNML-RACE6-PACE.pdf",
+"811-HOP-RACE8-PACE.pdf",
+"817-WBSB-RACE5-PACE.pdf",
+"820-BTVA-RACE8-PACE.pdf",
+"820-DTN-RACE14-PACE.pdf",
+"825-M-RACE6-PACE.pdf",
+"825-YR-RACE6-TROT.pdf",
+"831-LON-RACE8-PACE.pdf",
+"833-CNML-RACE7-PACE.pdf",
+"834-HOP-RACE9-TROT.pdf",
+"840-BTVA-RACE9-TROT.pdf",
+"840-WBSB-RACE6-TROT.pdf",
+"845-YR-RACE7-TROT.pdf",
+"850-M-RACE7-PACE.pdf",
+"854-LON-RACE9-PACE.pdf",
+"856-CNML-RACE8-PACE.pdf",
+"857-HOP-RACE10-PACE.pdf",
+"900-BTVA-RACE10-PACE.pdf",
+"903-WBSB-RACE7-PACE.pdf",
+"905-YR-RACE8-TROT.pdf",
+"915-M-RACE8-PACE.pdf",
+"917-LON-RACE10-PACE.pdf",
+"919-CNML-RACE9-PACE.pdf",
+"920-BTVA-RACE11-TROT.pdf",
+"920-HOP-RACE11-PACE.pdf",
+"925-YR-RACE9-PACE.pdf",
+"926-WBSB-RACE8-TROT.pdf",
+"940-BTVA-RACE12-PACE.pdf",
+"940-M-RACE9-PACE.pdf",
+"942-CNML-RACE10-PACE.pdf",
+"943-HOP-RACE12-PACE.pdf",
+"945-YR-RACE10-PACE.pdf",
+"949-WBSB-RACE9-PACE.pdf",
+
+// ALL UNTYPED FILES
+"PRC-RACE1-PACE.pdf","PRC-RACE2-PACE.pdf","PRC-RACE3-PACE.pdf","PRC-RACE4-PACE.pdf",
+"PRC-RACE5-PACE.pdf","PRC-RACE6-PACE.pdf","PRC-RACE7-PACE.pdf","PRC-RACE8-PACE.pdf","PRC-RACE9-PACE.pdf",
+"CNML-RACE1-PACE.pdf","CNML-RACE2-PACE.pdf","CNML-RACE3-PACE.pdf","CNML-RACE4-PACE.pdf",
+"CNML-RACE5-PACE.pdf","CNML-RACE6-PACE.pdf","CNML-RACE7-PACE.pdf","CNML-RACE8-PACE.pdf",
+"CNML-RACE9-PACE.pdf","CNML-RACE10-PACE.pdf","CNML-RACE11-PACE.pdf","CNML-RACE12-PACE.pdf",
+
+"BTVA-RACE1-TROT.pdf","BTVA-RACE2-PACE.pdf","BTVA-RACE3-TROT.pdf","BTVA-RACE4-PACE.pdf",
+"BTVA-RACE5-TROT.pdf","BTVA-RACE6-PACE.pdf","BTVA-RACE7-TROT.pdf","BTVA-RACE8-PACE.pdf",
+"BTVA-RACE9-TROT.pdf","BTVA-RACE10-PACE.pdf","BTVA-RACE11-TROT.pdf","BTVA-RACE12-PACE.pdf",
+
+"M-RACE1-PACE.pdf","M-RACE2-PACE.pdf","M-RACE3-TROT.pdf","M-RACE4-PACE.pdf","M-RACE5-PACE.pdf",
+"M-RACE6-PACE.pdf","M-RACE7-PACE.pdf","M-RACE8-PACE.pdf","M-RACE9-PACE.pdf","M-RACE10-PACE.pdf",
+"M-RACE11-PACE.pdf","M-RACE12-PACE.pdf","M-RACE13-TROT.pdf","M-RACE14-PACE.pdf",
+
+"MEA-RACE1-PACE.pdf","MEA-RACE2-TROT.pdf","MEA-RACE3-PACE.pdf","MEA-RACE4-PACE.pdf",
+"MEA-RACE5-PACE.pdf","MEA-RACE6-PACE.pdf","MEA-RACE7-PACE.pdf","MEA-RACE8-PACE.pdf",
+"MEA-RACE9-TROT.pdf","MEA-RACE10-PACE.pdf","MEA-RACE11-PACE.pdf","MEA-RACE12-TROT.pdf",
+"MEA-RACE13-PACE.pdf","MEA-RACE14-TROT.pdf","MEA-RACE15-PACE.pdf",
+
+"PHL-RACE1-PACE.pdf","PHL-RACE2-PACE.pdf","PHL-RACE3-PACE.pdf","PHL-RACE4-PACE.pdf",
+"PHL-RACE5-PACE.pdf","PHL-RACE6-PACE.pdf","PHL-RACE7-PACE.pdf","PHL-RACE8-PACE.pdf",
+"PHL-RACE9-PACE.pdf","PHL-RACE10-PACE.pdf","PHL-RACE11-PACE.pdf","PHL-RACE12-PACE.pdf",
+"PHL-RACE13-TROT.pdf","PHL-RACE14-PACE.pdf",
+
+"DTN-RACE1-PACE.pdf","DTN-RACE2-PACE.pdf","DTN-RACE3-PACE.pdf","DTN-RACE4-PACE.pdf",
+"DTN-RACE5-TROT.pdf","DTN-RACE6-PACE.pdf","DTN-RACE7-TROT.pdf","DTN-RACE8-PACE.pdf",
+"DTN-RACE9-PACE.pdf","DTN-RACE10-PACE.pdf","DTN-RACE11-PACE.pdf","DTN-RACE12-TROT.pdf",
+"DTN-RACE13-PACE.pdf","DTN-RACE14-PACE.pdf",
+
+"LON-RACE1-PACE.pdf","LON-RACE2-PACE.pdf","LON-RACE3-PACE.pdf","LON-RACE4-PACE.pdf",
+"LON-RACE5-PACE.pdf","LON-RACE6-PACE.pdf","LON-RACE7-PACE.pdf","LON-RACE8-PACE.pdf",
+"LON-RACE9-PACE.pdf","LON-RACE10-PACE.pdf",
+
+"HOP-RACE1-PACE.pdf","HOP-RACE2-PACE.pdf","HOP-RACE3-PACE.pdf","HOP-RACE4-PACE.pdf",
+"HOP-RACE5-PACE.pdf","HOP-RACE6-PACE.pdf","HOP-RACE7-TROT.pdf","HOP-RACE8-PACE.pdf",
+"HOP-RACE9-TROT.pdf","HOP-RACE10-PACE.pdf","HOP-RACE11-PACE.pdf","HOP-RACE12-PACE.pdf",
+"HOP-RACE13-PACE.pdf",
+
+"WBSB-RACE1-PACE.pdf","WBSB-RACE2-TROT.pdf","WBSB-RACE3-PACE.pdf","WBSB-RACE4-TROT.pdf",
+"WBSB-RACE5-PACE.pdf","WBSB-RACE6-TROT.pdf","WBSB-RACE7-PACE.pdf","WBSB-RACE8-TROT.pdf",
+"WBSB-RACE9-PACE.pdf","WBSB-RACE10-PACE.pdf",
+
+"YR-RACE1-TROT.pdf","YR-RACE2-PACE.pdf","YR-RACE3-PACE.pdf","YR-RACE4-TROT.pdf",
+"YR-RACE5-TROT.pdf","YR-RACE6-TROT.pdf","YR-RACE7-TROT.pdf","YR-RACE8-TROT.pdf",
+"YR-RACE9-PACE.pdf","YR-RACE10-PACE.pdf","YR-RACE11-TROT.pdf"
+];
+
+// Parse file into components
+function parse(f) {
+    let n = f.replace(".pdf","");
+    let p = n.split("-");
+    let hasTime = /^[0-9]+$/.test(p[0]);
+    let t = hasTime ? parseInt(p[0]) : null;
+    let i = hasTime ? 1 : 0;
+    return {
+        original: f,
+        time: t,
+        track: p[i],
+        race: p[i+1],
+        gait: p[i+2]
+    };
+}
+
+let parsed = files.map(parse);
+
+// Build grouping key
+let groups = {};
+parsed.forEach(f => {
+    let key = `${f.track}|${f.race}|${f.gait}`;
+    if (!groups[key]) groups[key] = { timed: [], untimed: [] };
+    if (f.time !== null) groups[key].timed.push(f);
+    else groups[key].untimed.push(f);
+});
+
+// Sort timed items
+Object.values(groups).forEach(g => g.timed.sort((a,b)=>a.time-b.time));
+
+// Sort groups by earliest timed race
+let sortedKeys = Object.keys(groups).sort((a,b)=>{
+    let aT = groups[a].timed.length ? groups[a].timed[0].time : 99999;
+    let bT = groups[b].timed.length ? groups[b].timed[0].time : 99999;
+    return aT - bT;
+});
+
+// OUTPUT HTML
+sortedKeys.forEach(key => {
+    let g = groups[key];
+
+    document.write(`<div class="pair-block">`);
+
+    g.timed.forEach(t => {
+        document.write(`<div class="file"><span class="time">${t.time}</span> — <a href="${t.original}" target="_blank">${t.original}</a></div>`);
+    });
+
+    g.untimed.forEach(u => {
+        document.write(`<div class="file"><a href="${u.original}" target="_blank">${u.original}</a></div>`);
+    });
+
+    document.write(`</div>`);
+});
+</script>
+
+</body>
+</html>
