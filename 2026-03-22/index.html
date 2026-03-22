@@ -1,1 +1,377 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harness Elite Reports – March 22, 2026</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --panel: #111827;
+      --panel-2: #1f2937;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --accent: #38bdf8;
+      --accent-2: #22c55e;
+      --border: #374151;
+      --shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #020617 0%, #0f172a 100%);
+      color: var(--text);
+      padding: 32px 20px 60px;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: 2.2rem;
+      line-height: 1.2;
+      color: #f8fafc;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 28px;
+    }
+
+    .section-title {
+      margin: 36px 0 16px;
+      font-size: 1.35rem;
+      color: #f8fafc;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: rgba(17, 24, 39, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .card-header {
+      padding: 16px 18px;
+      background: var(--panel-2);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .card-header h2 {
+      margin: 0;
+      font-size: 1.1rem;
+      color: #f8fafc;
+    }
+
+    .card-body {
+      padding: 14px 18px 18px;
+    }
+
+    .link-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .link-list li {
+      margin: 0;
+      padding: 10px 0;
+      border-bottom: 1px solid rgba(55, 65, 81, 0.55);
+    }
+
+    .link-list li:last-child {
+      border-bottom: none;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .meta {
+      display: block;
+      color: var(--muted);
+      font-size: 0.88rem;
+      margin-top: 4px;
+    }
+
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+
+    .pill {
+      display: inline-block;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(56, 189, 248, 0.12);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      color: #bae6fd;
+      font-size: 0.9rem;
+    }
+
+    .general-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 14px;
+    }
+
+    .general-item {
+      background: rgba(17, 24, 39, 0.92);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .general-item a {
+      font-size: 0.98rem;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: var(--muted);
+      font-size: 0.9rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Harness Elite Reports – March 22, 2026</h1>
+    <div class="subtitle">Daily report index with general reports first, followed by track cards and uploaded track PDFs.</div>
+
+    <div class="topbar">
+      <span class="pill">Date: 2026-03-22</span>
+      <span class="pill">Tracks: CUMB, FLMD, MVR, NFLD, STGA, TKT, WBSB</span>
+      <span class="pill">Includes track PDFs</span>
+    </div>
+
+    <div class="section-title">General Reports</div>
+    <div class="general-grid">
+      <div class="general-item"><a href="HTB_Top20_20260322.pdf" target="_blank">HTB_Top20_20260322.pdf</a><span class="meta">Top 20 report</span></div>
+      <div class="general-item"><a href="Harness_Track_Daily_Summary_20260322.pdf" target="_blank">Harness_Track_Daily_Summary_20260322.pdf</a><span class="meta">Track daily summary</span></div>
+      <div class="general-item"><a href="Harness_Vertical_PayoffScore_Report_20260322.pdf" target="_blank">Harness_Vertical_PayoffScore_Report_20260322.pdf</a><span class="meta">Vertical payoff score report</span></div>
+      <div class="general-item"><a href="Harness_Wager_Bettable_Scores_AllSeq_TrackSorted_20260322.pdf" target="_blank">Harness_Wager_Bettable_Scores_AllSeq_TrackSorted_20260322.pdf</a><span class="meta">Bettable scores by track</span></div>
+      <div class="general-item"><a href="LeadThreatIndex_Report_20260322.pdf" target="_blank">LeadThreatIndex_Report_20260322.pdf</a><span class="meta">All-track lead threat index</span></div>
+      <div class="general-item"><a href="Likely_Improvers_Report_All.pdf" target="_blank">Likely_Improvers_Report_All.pdf</a><span class="meta">Likely improvers report</span></div>
+      <div class="general-item"><a href="RaceCompetitiveness_Exacta_20260322.pdf" target="_blank">RaceCompetitiveness_Exacta_20260322.pdf</a><span class="meta">Exacta competitiveness</span></div>
+      <div class="general-item"><a href="RaceCompetitiveness_Extras_ByCI_20260322.pdf" target="_blank">RaceCompetitiveness_Extras_ByCI_20260322.pdf</a><span class="meta">Extras ranked by competitiveness index</span></div>
+      <div class="general-item"><a href="RaceCompetitiveness_Extras_ByTime_20260322.pdf" target="_blank">RaceCompetitiveness_Extras_ByTime_20260322.pdf</a><span class="meta">Extras ranked by post time</span></div>
+      <div class="general-item"><a href="Race_Ratings_20260322.pdf" target="_blank">Race_Ratings_20260322.pdf</a><span class="meta">Race ratings</span></div>
+      <div class="general-item"><a href="Rebound_RC_Top3PerRace_20260322.pdf" target="_blank">Rebound_RC_Top3PerRace_20260322.pdf</a><span class="meta">Rebound top 3 per race</span></div>
+      <div class="general-item"><a href="Run_of_Show_2026-03-22.pdf" target="_blank">Run_of_Show_2026-03-22.pdf</a><span class="meta">Run of show</span></div>
+      <div class="general-item"><a href="SuperFav_AllGaits_Top150_20260322.pdf" target="_blank">SuperFav_AllGaits_Top150_20260322.pdf</a><span class="meta">Top 150 super favorites</span></div>
+      <div class="general-item"><a href="Value_Plays_20260322.pdf" target="_blank">Value_Plays_20260322.pdf</a><span class="meta">Value plays</span></div>
+      <div class="general-item"><a href="WinningStreaks_Report_20260322.pdf" target="_blank">WinningStreaks_Report_20260322.pdf</a><span class="meta">Winning streaks</span></div>
+    </div>
+
+    <div class="section-title">Uploaded Track PDFs</div>
+    <div class="general-grid">
+      <div class="general-item"><a href="cumberlandmar22.pdf" target="_blank">cumberlandmar22.pdf</a><span class="meta">Uploaded track PDF</span></div>
+      <div class="general-item"><a href="flamboromar22.pdf" target="_blank">flamboromar22.pdf</a><span class="meta">Uploaded track PDF</span></div>
+      <div class="general-item"><a href="miamivalleymar22.pdf" target="_blank">miamivalleymar22.pdf</a><span class="meta">Uploaded track PDF</span></div>
+      <div class="general-item"><a href="northfieldmar22.pdf" target="_blank">northfieldmar22.pdf</a><span class="meta">Uploaded track PDF</span></div>
+      <div class="general-item"><a href="saratogamar22.pdf" target="_blank">saratogamar22.pdf</a><span class="meta">Uploaded track PDF</span></div>
+      <div class="general-item"><a href="tackon2mar22.pdf" target="_blank">tackon2mar22.pdf</a><span class="meta">Uploaded track PDF</span></div>
+      <div class="general-item"><a href="woodbinemar22.pdf" target="_blank">woodbinemar22.pdf</a><span class="meta">Uploaded track PDF</span></div>
+    </div>
+
+    <div class="section-title">Track Reports</div>
+    <div class="grid">
+      <div class="card">
+        <div class="card-header">
+          <h2>CUMB</h2>
+        </div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a href="Racecards_Intelligence_Report_20260322_Readable_v18_CUMB.pdf" target="_blank">Racecards_Intelligence_Report_20260322_Readable_v18_CUMB.pdf</a><span class="meta">Track intelligence report</span></li>
+            <li><a href="CUMB_LeadThreatIndex_20260322.pdf" target="_blank">CUMB_LeadThreatIndex_20260322.pdf</a><span class="meta">Track lead threat index</span></li>
+            <li><a href="CUMB-RACE1-PACE.pdf" target="_blank">CUMB-RACE1-PACE.pdf</a></li>
+            <li><a href="CUMB-RACE2-PACE.pdf" target="_blank">CUMB-RACE2-PACE.pdf</a></li>
+            <li><a href="CUMB-RACE3-PACE.pdf" target="_blank">CUMB-RACE3-PACE.pdf</a></li>
+            <li><a href="CUMB-RACE4-PACE.pdf" target="_blank">CUMB-RACE4-PACE.pdf</a></li>
+            <li><a href="CUMB-RACE5-PACE.pdf" target="_blank">CUMB-RACE5-PACE.pdf</a></li>
+            <li><a href="CUMB-RACE6-PACE.pdf" target="_blank">CUMB-RACE6-PACE.pdf</a></li>
+            <li><a href="CUMB-RACE7-PACE.pdf" target="_blank">CUMB-RACE7-PACE.pdf</a></li>
+            <li><a href="CUMB-RACE8-PACE.pdf" target="_blank">CUMB-RACE8-PACE.pdf</a></li>
+            <li><a href="CUMB-RACE9-PACE.pdf" target="_blank">CUMB-RACE9-PACE.pdf</a></li>
+            <li><a href="CUMB-RACE10-PACE.pdf" target="_blank">CUMB-RACE10-PACE.pdf</a></li>
+            <li><a href="CUMB-RACE11-PACE.pdf" target="_blank">CUMB-RACE11-PACE.pdf</a></li>
+            <li><a href="CUMB-RACE12-PACE.pdf" target="_blank">CUMB-RACE12-PACE.pdf</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>FLMD</h2>
+        </div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a href="Racecards_Intelligence_Report_20260322_Readable_v18_FLMD.pdf" target="_blank">Racecards_Intelligence_Report_20260322_Readable_v18_FLMD.pdf</a><span class="meta">Track intelligence report</span></li>
+            <li><a href="FLMD_LeadThreatIndex_20260322.pdf" target="_blank">FLMD_LeadThreatIndex_20260322.pdf</a><span class="meta">Track lead threat index</span></li>
+            <li><a href="FLMD-RACE1-PACE.pdf" target="_blank">FLMD-RACE1-PACE.pdf</a></li>
+            <li><a href="FLMD-RACE2-PACE.pdf" target="_blank">FLMD-RACE2-PACE.pdf</a></li>
+            <li><a href="FLMD-RACE3-PACE.pdf" target="_blank">FLMD-RACE3-PACE.pdf</a></li>
+            <li><a href="FLMD-RACE4-PACE.pdf" target="_blank">FLMD-RACE4-PACE.pdf</a></li>
+            <li><a href="FLMD-RACE5-PACE.pdf" target="_blank">FLMD-RACE5-PACE.pdf</a></li>
+            <li><a href="FLMD-RACE6-PACE.pdf" target="_blank">FLMD-RACE6-PACE.pdf</a></li>
+            <li><a href="FLMD-RACE7-PACE.pdf" target="_blank">FLMD-RACE7-PACE.pdf</a></li>
+            <li><a href="FLMD-RACE8-PACE.pdf" target="_blank">FLMD-RACE8-PACE.pdf</a></li>
+            <li><a href="FLMD-RACE9-PACE.pdf" target="_blank">FLMD-RACE9-PACE.pdf</a></li>
+            <li><a href="FLMD-RACE10-PACE.pdf" target="_blank">FLMD-RACE10-PACE.pdf</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>MVR</h2>
+        </div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a href="Racecards_Intelligence_Report_20260322_Readable_v18_MVR.pdf" target="_blank">Racecards_Intelligence_Report_20260322_Readable_v18_MVR.pdf</a><span class="meta">Track intelligence report</span></li>
+            <li><a href="MVR_LeadThreatIndex_20260322.pdf" target="_blank">MVR_LeadThreatIndex_20260322.pdf</a><span class="meta">Track lead threat index</span></li>
+            <li><a href="MVR-RACE1-PACE.pdf" target="_blank">MVR-RACE1-PACE.pdf</a></li>
+            <li><a href="MVR-RACE2-PACE.pdf" target="_blank">MVR-RACE2-PACE.pdf</a></li>
+            <li><a href="MVR-RACE3-PACE.pdf" target="_blank">MVR-RACE3-PACE.pdf</a></li>
+            <li><a href="MVR-RACE4-PACE.pdf" target="_blank">MVR-RACE4-PACE.pdf</a></li>
+            <li><a href="MVR-RACE5-PACE.pdf" target="_blank">MVR-RACE5-PACE.pdf</a></li>
+            <li><a href="MVR-RACE6-PACE.pdf" target="_blank">MVR-RACE6-PACE.pdf</a></li>
+            <li><a href="MVR-RACE7-PACE.pdf" target="_blank">MVR-RACE7-PACE.pdf</a></li>
+            <li><a href="MVR-RACE8-PACE.pdf" target="_blank">MVR-RACE8-PACE.pdf</a></li>
+            <li><a href="MVR-RACE9-PACE.pdf" target="_blank">MVR-RACE9-PACE.pdf</a></li>
+            <li><a href="MVR-RACE10-PACE.pdf" target="_blank">MVR-RACE10-PACE.pdf</a></li>
+            <li><a href="MVR-RACE11-PACE.pdf" target="_blank">MVR-RACE11-PACE.pdf</a></li>
+            <li><a href="MVR-RACE12-PACE.pdf" target="_blank">MVR-RACE12-PACE.pdf</a></li>
+            <li><a href="MVR-RACE13-PACE.pdf" target="_blank">MVR-RACE13-PACE.pdf</a></li>
+            <li><a href="MVR-RACE14-PACE.pdf" target="_blank">MVR-RACE14-PACE.pdf</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>NFLD</h2>
+        </div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a href="Racecards_Intelligence_Report_20260322_Readable_v18_NFLD.pdf" target="_blank">Racecards_Intelligence_Report_20260322_Readable_v18_NFLD.pdf</a><span class="meta">Track intelligence report</span></li>
+            <li><a href="NFLD_LeadThreatIndex_20260322.pdf" target="_blank">NFLD_LeadThreatIndex_20260322.pdf</a><span class="meta">Track lead threat index</span></li>
+            <li><a href="NFLD-RACE1-PACE.pdf" target="_blank">NFLD-RACE1-PACE.pdf</a></li>
+            <li><a href="NFLD-RACE2-TROT.pdf" target="_blank">NFLD-RACE2-TROT.pdf</a></li>
+            <li><a href="NFLD-RACE3-TROT.pdf" target="_blank">NFLD-RACE3-TROT.pdf</a></li>
+            <li><a href="NFLD-RACE4-PACE.pdf" target="_blank">NFLD-RACE4-PACE.pdf</a></li>
+            <li><a href="NFLD-RACE5-PACE.pdf" target="_blank">NFLD-RACE5-PACE.pdf</a></li>
+            <li><a href="NFLD-RACE6-TROT.pdf" target="_blank">NFLD-RACE6-TROT.pdf</a></li>
+            <li><a href="NFLD-RACE7-PACE.pdf" target="_blank">NFLD-RACE7-PACE.pdf</a></li>
+            <li><a href="NFLD-RACE8-PACE.pdf" target="_blank">NFLD-RACE8-PACE.pdf</a></li>
+            <li><a href="NFLD-RACE9-PACE.pdf" target="_blank">NFLD-RACE9-PACE.pdf</a></li>
+            <li><a href="NFLD-RACE10-TROT.pdf" target="_blank">NFLD-RACE10-TROT.pdf</a></li>
+            <li><a href="NFLD-RACE11-PACE.pdf" target="_blank">NFLD-RACE11-PACE.pdf</a></li>
+            <li><a href="NFLD-RACE12-PACE.pdf" target="_blank">NFLD-RACE12-PACE.pdf</a></li>
+            <li><a href="NFLD-RACE13-PACE.pdf" target="_blank">NFLD-RACE13-PACE.pdf</a></li>
+            <li><a href="NFLD-RACE14-TROT.pdf" target="_blank">NFLD-RACE14-TROT.pdf</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>STGA</h2>
+        </div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a href="Racecards_Intelligence_Report_20260322_Readable_v18_STGA.pdf" target="_blank">Racecards_Intelligence_Report_20260322_Readable_v18_STGA.pdf</a><span class="meta">Track intelligence report</span></li>
+            <li><a href="STGA_LeadThreatIndex_20260322.pdf" target="_blank">STGA_LeadThreatIndex_20260322.pdf</a><span class="meta">Track lead threat index</span></li>
+            <li><a href="STGA-RACE1-PACE.pdf" target="_blank">STGA-RACE1-PACE.pdf</a></li>
+            <li><a href="STGA-RACE2-PACE.pdf" target="_blank">STGA-RACE2-PACE.pdf</a></li>
+            <li><a href="STGA-RACE3-PACE.pdf" target="_blank">STGA-RACE3-PACE.pdf</a></li>
+            <li><a href="STGA-RACE4-PACE.pdf" target="_blank">STGA-RACE4-PACE.pdf</a></li>
+            <li><a href="STGA-RACE5-PACE.pdf" target="_blank">STGA-RACE5-PACE.pdf</a></li>
+            <li><a href="STGA-RACE6-PACE.pdf" target="_blank">STGA-RACE6-PACE.pdf</a></li>
+            <li><a href="STGA-RACE7-PACE.pdf" target="_blank">STGA-RACE7-PACE.pdf</a></li>
+            <li><a href="STGA-RACE8-PACE.pdf" target="_blank">STGA-RACE8-PACE.pdf</a></li>
+            <li><a href="STGA-RACE9-PACE.pdf" target="_blank">STGA-RACE9-PACE.pdf</a></li>
+            <li><a href="STGA-RACE10-PACE.pdf" target="_blank">STGA-RACE10-PACE.pdf</a></li>
+            <li><a href="STGA-RACE11-PACE.pdf" target="_blank">STGA-RACE11-PACE.pdf</a></li>
+            <li><a href="STGA-RACE12-PACE.pdf" target="_blank">STGA-RACE12-PACE.pdf</a></li>
+            <li><a href="STGA-RACE13-PACE.pdf" target="_blank">STGA-RACE13-PACE.pdf</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>TKT</h2>
+        </div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a href="Racecards_Intelligence_Report_20260322_Readable_v18_TKT.pdf" target="_blank">Racecards_Intelligence_Report_20260322_Readable_v18_TKT.pdf</a><span class="meta">Track intelligence report</span></li>
+            <li><a href="TKT_LeadThreatIndex_20260322.pdf" target="_blank">TKT_LeadThreatIndex_20260322.pdf</a><span class="meta">Track lead threat index</span></li>
+            <li><a href="TKT-RACE1-PACE.pdf" target="_blank">TKT-RACE1-PACE.pdf</a></li>
+            <li><a href="TKT-RACE2-PACE.pdf" target="_blank">TKT-RACE2-PACE.pdf</a></li>
+            <li><a href="TKT-RACE3-PACE.pdf" target="_blank">TKT-RACE3-PACE.pdf</a></li>
+            <li><a href="TKT-RACE4-PACE.pdf" target="_blank">TKT-RACE4-PACE.pdf</a></li>
+            <li><a href="TKT-RACE5-PACE.pdf" target="_blank">TKT-RACE5-PACE.pdf</a></li>
+            <li><a href="TKT-RACE6-PACE.pdf" target="_blank">TKT-RACE6-PACE.pdf</a></li>
+            <li><a href="TKT-RACE7-PACE.pdf" target="_blank">TKT-RACE7-PACE.pdf</a></li>
+            <li><a href="TKT-RACE8-PACE.pdf" target="_blank">TKT-RACE8-PACE.pdf</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h2>WBSB</h2>
+        </div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a href="Racecards_Intelligence_Report_20260322_Readable_v18_WBSB.pdf" target="_blank">Racecards_Intelligence_Report_20260322_Readable_v18_WBSB.pdf</a><span class="meta">Track intelligence report</span></li>
+            <li><a href="WBSB_LeadThreatIndex_20260322.pdf" target="_blank">WBSB_LeadThreatIndex_20260322.pdf</a><span class="meta">Track lead threat index</span></li>
+            <li><a href="WBSB-RACE1-PACE.pdf" target="_blank">WBSB-RACE1-PACE.pdf</a></li>
+            <li><a href="WBSB-RACE2-PACE.pdf" target="_blank">WBSB-RACE2-PACE.pdf</a></li>
+            <li><a href="WBSB-RACE3-PACE.pdf" target="_blank">WBSB-RACE3-PACE.pdf</a></li>
+            <li><a href="WBSB-RACE4-TROT.pdf" target="_blank">WBSB-RACE4-TROT.pdf</a></li>
+            <li><a href="WBSB-RACE5-TROT.pdf" target="_blank">WBSB-RACE5-TROT.pdf</a></li>
+            <li><a href="WBSB-RACE6-PACE.pdf" target="_blank">WBSB-RACE6-PACE.pdf</a></li>
+            <li><a href="WBSB-RACE7-PACE.pdf" target="_blank">WBSB-RACE7-PACE.pdf</a></li>
+            <li><a href="WBSB-RACE8-TROT.pdf" target="_blank">WBSB-RACE8-TROT.pdf</a></li>
+            <li><a href="WBSB-RACE9-PACE.pdf" target="_blank">WBSB-RACE9-PACE.pdf</a></li>
+            <li><a href="WBSB-RACE10-TROT.pdf" target="_blank">WBSB-RACE10-TROT.pdf</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      index.html • March 22, 2026 • All links open in a new tab
+    </footer>
+  </div>
+</body>
+</html>
