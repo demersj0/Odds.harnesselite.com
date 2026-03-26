@@ -1,1 +1,431 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harness Elite Reports - March 26, 2026</title>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:#121933;
+      --panel-2:#182142;
+      --text:#f3f6ff;
+      --muted:#aeb9d6;
+      --accent:#62d0ff;
+      --accent-2:#7cffb6;
+      --border:rgba(255,255,255,.10);
+      --shadow:0 10px 30px rgba(0,0,0,.28);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:linear-gradient(180deg,#0a0f1e 0%,#101733 100%);
+      color:var(--text);
+    }
+    a{
+      color:var(--accent);
+      text-decoration:none;
+    }
+    a:hover{
+      text-decoration:underline;
+    }
+    .wrap{
+      max-width:1400px;
+      margin:0 auto;
+      padding:28px 20px 48px;
+    }
+    .hero{
+      background:linear-gradient(135deg,#16224a 0%,#0f1735 100%);
+      border:1px solid var(--border);
+      border-radius:20px;
+      padding:28px;
+      box-shadow:var(--shadow);
+      margin-bottom:24px;
+    }
+    .hero h1{
+      margin:0 0 8px;
+      font-size:34px;
+      line-height:1.1;
+    }
+    .hero p{
+      margin:0;
+      color:var(--muted);
+      font-size:16px;
+    }
+    .section-title{
+      margin:28px 0 14px;
+      font-size:24px;
+      letter-spacing:.2px;
+    }
+    .general-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+      gap:14px;
+    }
+    .card{
+      background:var(--panel);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      box-shadow:var(--shadow);
+    }
+    .card h3{
+      margin:0 0 12px;
+      font-size:18px;
+    }
+    .card ul{
+      list-style:none;
+      margin:0;
+      padding:0;
+    }
+    .card li{
+      padding:7px 0;
+      border-bottom:1px solid rgba(255,255,255,.06);
+      font-size:14px;
+    }
+    .card li:last-child{
+      border-bottom:none;
+      padding-bottom:0;
+    }
+    .tracks{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(330px,1fr));
+      gap:18px;
+    }
+    .track-card{
+      background:var(--panel-2);
+      border:1px solid var(--border);
+      border-radius:18px;
+      padding:18px;
+      box-shadow:var(--shadow);
+    }
+    .track-card h2{
+      margin:0 0 6px;
+      font-size:22px;
+    }
+    .track-meta{
+      color:var(--muted);
+      font-size:13px;
+      margin-bottom:14px;
+    }
+    .subhead{
+      margin:16px 0 8px;
+      font-size:14px;
+      color:var(--accent-2);
+      text-transform:uppercase;
+      letter-spacing:.8px;
+    }
+    .file-list{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    .file-list li{
+      padding:6px 0;
+      border-bottom:1px solid rgba(255,255,255,.06);
+      font-size:14px;
+    }
+    .file-list li:last-child{
+      border-bottom:none;
+    }
+    .footer{
+      margin-top:34px;
+      color:var(--muted);
+      font-size:13px;
+      text-align:center;
+    }
+    .pill{
+      display:inline-block;
+      font-size:11px;
+      color:#d6f5ff;
+      background:rgba(98,208,255,.12);
+      border:1px solid rgba(98,208,255,.28);
+      padding:3px 8px;
+      border-radius:999px;
+      margin-left:6px;
+      vertical-align:middle;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Harness Elite Reports - March 26, 2026</h1>
+      <p>General reports first, then full track cards with race PDFs sorted in order. All links open in new tabs.</p>
+    </div>
+
+    <h2 class="section-title">General Reports</h2>
+    <div class="general-grid">
+      <div class="card">
+        <h3>Core Reports</h3>
+        <ul>
+          <li><a href="Contenders_Report_20260326.pdf" target="_blank">Contenders Report</a></li>
+          <li><a href="HTB_Top20_20260326.pdf" target="_blank">HTB Top 20</a></li>
+          <li><a href="Harness_Track_Daily_Summary_20260326.pdf" target="_blank">Harness Track Daily Summary</a></li>
+          <li><a href="Harness_Vertical_PayoffScore_Report_20260326.pdf" target="_blank">Harness Vertical PayoffScore Report</a></li>
+          <li><a href="Harness_Wager_Bettable_Scores_AllSeq_TrackSorted_20260326.pdf" target="_blank">Harness Wager Bettable Scores</a></li>
+          <li><a href="LeadThreatIndex_Report_20260326.pdf" target="_blank">LeadThreatIndex Report</a></li>
+          <li><a href="Likely_Improvers_Report_All.pdf" target="_blank">Likely Improvers Report</a></li>
+          <li><a href="Race_Ratings_20260326.pdf" target="_blank">Race Ratings</a></li>
+          <li><a href="Rebound_RC_Top3PerRace_20260326.pdf" target="_blank">Rebound RC Top 3 Per Race</a></li>
+          <li><a href="Run_of_Show_2026-03-26.pdf" target="_blank">Run of Show</a></li>
+          <li><a href="SuperFav_AllGaits_Top150_20260326.pdf" target="_blank">SuperFav All Gaits Top 150</a></li>
+          <li><a href="Value_Plays_20260326.pdf" target="_blank">Value Plays</a></li>
+          <li><a href="WinningStreaks_Report_20260326.pdf" target="_blank">Winning Streaks Report</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Race Competitiveness</h3>
+        <ul>
+          <li><a href="RaceCompetitiveness_Exacta_20260326.pdf" target="_blank">Race Competitiveness Exacta</a></li>
+          <li><a href="RaceCompetitiveness_Extras_ByCI_20260326.pdf" target="_blank">Race Competitiveness Extras by CI</a></li>
+          <li><a href="RaceCompetitiveness_Extras_ByTime_20260326.pdf" target="_blank">Race Competitiveness Extras by Time</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Track Program PDFs</h3>
+        <ul>
+          <li><a href="doverdownsmarch26.pdf" target="_blank">Dover Downs Program</a></li>
+          <li><a href="flamboromar26.pdf" target="_blank">Flamboro Program</a></li>
+          <li><a href="hoosierma26.pdf" target="_blank">Hoosier Program</a></li>
+          <li><a href="meadowsmar26.pdf" target="_blank">Meadows Program</a></li>
+          <li><a href="miamivalleymar26.pdf" target="_blank">Miami Valley Program</a></li>
+          <li><a href="monticellomar26.pdf" target="_blank">Monticello Program</a></li>
+          <li><a href="rosecroftmar26.pdf" target="_blank">Rosecroft Program</a></li>
+          <li><a href="yonkersmar26.pdf" target="_blank">Yonkers Program</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-title">Track Reports</h2>
+    <div class="tracks">
+
+      <div class="track-card">
+        <h2>Dover Downs <span class="pill">DD</span></h2>
+        <div class="track-meta">March 26, 2026</div>
+        <div class="subhead">Track-Level Reports</div>
+        <ul class="file-list">
+          <li><a href="DD_LeadThreatIndex_20260326.pdf" target="_blank">DD LeadThreatIndex</a></li>
+          <li><a href="DD_Race_Report_20260326.pdf" target="_blank">DD Race Report</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260326_Readable_v18_DD.pdf" target="_blank">DD Racecards Intelligence Report</a></li>
+          <li><a href="doverdownsmarch26.pdf" target="_blank">Dover Downs Program PDF</a></li>
+        </ul>
+        <div class="subhead">Race PDFs</div>
+        <ul class="file-list">
+          <li><a href="DD-RACE1-PACE.pdf" target="_blank">Race 1 - Pace</a></li>
+          <li><a href="DD-RACE2-PACE.pdf" target="_blank">Race 2 - Pace</a></li>
+          <li><a href="DD-RACE3-PACE.pdf" target="_blank">Race 3 - Pace</a></li>
+          <li><a href="DD-RACE4-PACE.pdf" target="_blank">Race 4 - Pace</a></li>
+          <li><a href="DD-RACE5-PACE.pdf" target="_blank">Race 5 - Pace</a></li>
+          <li><a href="DD-RACE6-PACE.pdf" target="_blank">Race 6 - Pace</a></li>
+          <li><a href="DD-RACE7-PACE.pdf" target="_blank">Race 7 - Pace</a></li>
+          <li><a href="DD-RACE8-PACE.pdf" target="_blank">Race 8 - Pace</a></li>
+          <li><a href="DD-RACE9-PACE.pdf" target="_blank">Race 9 - Pace</a></li>
+          <li><a href="DD-RACE10-PACE.pdf" target="_blank">Race 10 - Pace</a></li>
+          <li><a href="DD-RACE11-PACE.pdf" target="_blank">Race 11 - Pace</a></li>
+          <li><a href="DD-RACE12-PACE.pdf" target="_blank">Race 12 - Pace</a></li>
+          <li><a href="DD-RACE13-PACE.pdf" target="_blank">Race 13 - Pace</a></li>
+          <li><a href="DD-RACE14-PACE.pdf" target="_blank">Race 14 - Pace</a></li>
+        </ul>
+      </div>
+
+      <div class="track-card">
+        <h2>Flamboro Downs <span class="pill">FLMD</span></h2>
+        <div class="track-meta">March 26, 2026</div>
+        <div class="subhead">Track-Level Reports</div>
+        <ul class="file-list">
+          <li><a href="FLMD_LeadThreatIndex_20260326.pdf" target="_blank">FLMD LeadThreatIndex</a></li>
+          <li><a href="FLMD_Race_Report_20260326.pdf" target="_blank">FLMD Race Report</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260326_Readable_v18_FLMD.pdf" target="_blank">FLMD Racecards Intelligence Report</a></li>
+          <li><a href="flamboromar26.pdf" target="_blank">Flamboro Program PDF</a></li>
+        </ul>
+        <div class="subhead">Race PDFs</div>
+        <ul class="file-list">
+          <li><a href="FLMD-RACE1-TROT.pdf" target="_blank">Race 1 - Trot</a></li>
+          <li><a href="FLMD-RACE2-PACE.pdf" target="_blank">Race 2 - Pace</a></li>
+          <li><a href="FLMD-RACE3-PACE.pdf" target="_blank">Race 3 - Pace</a></li>
+          <li><a href="FLMD-RACE4-PACE.pdf" target="_blank">Race 4 - Pace</a></li>
+          <li><a href="FLMD-RACE5-PACE.pdf" target="_blank">Race 5 - Pace</a></li>
+          <li><a href="FLMD-RACE6-PACE.pdf" target="_blank">Race 6 - Pace</a></li>
+          <li><a href="FLMD-RACE7-PACE.pdf" target="_blank">Race 7 - Pace</a></li>
+          <li><a href="FLMD-RACE8-TROT.pdf" target="_blank">Race 8 - Trot</a></li>
+          <li><a href="FLMD-RACE9-TROT.pdf" target="_blank">Race 9 - Trot</a></li>
+          <li><a href="FLMD-RACE10-PACE.pdf" target="_blank">Race 10 - Pace</a></li>
+        </ul>
+      </div>
+
+      <div class="track-card">
+        <h2>Hoosier Park <span class="pill">HOP</span></h2>
+        <div class="track-meta">March 26, 2026</div>
+        <div class="subhead">Track-Level Reports</div>
+        <ul class="file-list">
+          <li><a href="HOP_LeadThreatIndex_20260326.pdf" target="_blank">HOP LeadThreatIndex</a></li>
+          <li><a href="HOP_Race_Report_20260326.pdf" target="_blank">HOP Race Report</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260326_Readable_v18_HOP.pdf" target="_blank">HOP Racecards Intelligence Report</a></li>
+          <li><a href="hoosierma26.pdf" target="_blank">Hoosier Program PDF</a></li>
+        </ul>
+        <div class="subhead">Race PDFs</div>
+        <ul class="file-list">
+          <li><a href="HOP-RACE1-PACE.pdf" target="_blank">Race 1 - Pace</a></li>
+          <li><a href="HOP-RACE2-TROT.pdf" target="_blank">Race 2 - Trot</a></li>
+          <li><a href="HOP-RACE3-TROT.pdf" target="_blank">Race 3 - Trot</a></li>
+          <li><a href="HOP-RACE4-PACE.pdf" target="_blank">Race 4 - Pace</a></li>
+          <li><a href="HOP-RACE5-PACE.pdf" target="_blank">Race 5 - Pace</a></li>
+          <li><a href="HOP-RACE6-PACE.pdf" target="_blank">Race 6 - Pace</a></li>
+          <li><a href="HOP-RACE7-PACE.pdf" target="_blank">Race 7 - Pace</a></li>
+          <li><a href="HOP-RACE8-PACE.pdf" target="_blank">Race 8 - Pace</a></li>
+          <li><a href="HOP-RACE9-PACE.pdf" target="_blank">Race 9 - Pace</a></li>
+          <li><a href="HOP-RACE10-PACE.pdf" target="_blank">Race 10 - Pace</a></li>
+          <li><a href="HOP-RACE11-PACE.pdf" target="_blank">Race 11 - Pace</a></li>
+          <li><a href="HOP-RACE12-PACE.pdf" target="_blank">Race 12 - Pace</a></li>
+          <li><a href="HOP-RACE13-TROT.pdf" target="_blank">Race 13 - Trot</a></li>
+          <li><a href="HOP-RACE14-PACE.pdf" target="_blank">Race 14 - Pace</a></li>
+        </ul>
+      </div>
+
+      <div class="track-card">
+        <h2>The Meadows <span class="pill">MEA</span></h2>
+        <div class="track-meta">March 26, 2026</div>
+        <div class="subhead">Track-Level Reports</div>
+        <ul class="file-list">
+          <li><a href="MEA_LeadThreatIndex_20260326.pdf" target="_blank">MEA LeadThreatIndex</a></li>
+          <li><a href="MEA_Race_Report_20260326.pdf" target="_blank">MEA Race Report</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260326_Readable_v18_MEA.pdf" target="_blank">MEA Racecards Intelligence Report</a></li>
+          <li><a href="meadowsmar26.pdf" target="_blank">Meadows Program PDF</a></li>
+        </ul>
+        <div class="subhead">Race PDFs</div>
+        <ul class="file-list">
+          <li><a href="MEA-RACE1-PACE.pdf" target="_blank">Race 1 - Pace</a></li>
+          <li><a href="MEA-RACE2-TROT.pdf" target="_blank">Race 2 - Trot</a></li>
+          <li><a href="MEA-RACE3-PACE.pdf" target="_blank">Race 3 - Pace</a></li>
+          <li><a href="MEA-RACE4-PACE.pdf" target="_blank">Race 4 - Pace</a></li>
+          <li><a href="MEA-RACE5-TROT.pdf" target="_blank">Race 5 - Trot</a></li>
+          <li><a href="MEA-RACE6-PACE.pdf" target="_blank">Race 6 - Pace</a></li>
+          <li><a href="MEA-RACE7-TROT.pdf" target="_blank">Race 7 - Trot</a></li>
+          <li><a href="MEA-RACE8-PACE.pdf" target="_blank">Race 8 - Pace</a></li>
+          <li><a href="MEA-RACE9-TROT.pdf" target="_blank">Race 9 - Trot</a></li>
+          <li><a href="MEA-RACE10-PACE.pdf" target="_blank">Race 10 - Pace</a></li>
+          <li><a href="MEA-RACE11-TROT.pdf" target="_blank">Race 11 - Trot</a></li>
+          <li><a href="MEA-RACE12-PACE.pdf" target="_blank">Race 12 - Pace</a></li>
+          <li><a href="MEA-RACE13-TROT.pdf" target="_blank">Race 13 - Trot</a></li>
+        </ul>
+      </div>
+
+      <div class="track-card">
+        <h2>Monticello Raceway <span class="pill">MR</span></h2>
+        <div class="track-meta">March 26, 2026</div>
+        <div class="subhead">Track-Level Reports</div>
+        <ul class="file-list">
+          <li><a href="MR_LeadThreatIndex_20260326.pdf" target="_blank">MR LeadThreatIndex</a></li>
+          <li><a href="MR_Race_Report_20260326.pdf" target="_blank">MR Race Report</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260326_Readable_v18_MR.pdf" target="_blank">MR Racecards Intelligence Report</a></li>
+          <li><a href="monticellomar26.pdf" target="_blank">Monticello Program PDF</a></li>
+        </ul>
+        <div class="subhead">Race PDFs</div>
+        <ul class="file-list">
+          <li><a href="MR-RACE1-PACE.pdf" target="_blank">Race 1 - Pace</a></li>
+          <li><a href="MR-RACE2-PACE.pdf" target="_blank">Race 2 - Pace</a></li>
+          <li><a href="MR-RACE3-PACE.pdf" target="_blank">Race 3 - Pace</a></li>
+          <li><a href="MR-RACE4-PACE.pdf" target="_blank">Race 4 - Pace</a></li>
+          <li><a href="MR-RACE5-PACE.pdf" target="_blank">Race 5 - Pace</a></li>
+          <li><a href="MR-RACE6-PACE.pdf" target="_blank">Race 6 - Pace</a></li>
+          <li><a href="MR-RACE7-PACE.pdf" target="_blank">Race 7 - Pace</a></li>
+          <li><a href="MR-RACE8-PACE.pdf" target="_blank">Race 8 - Pace</a></li>
+          <li><a href="MR-RACE9-PACE.pdf" target="_blank">Race 9 - Pace</a></li>
+          <li><a href="MR-RACE10-PACE.pdf" target="_blank">Race 10 - Pace</a></li>
+        </ul>
+      </div>
+
+      <div class="track-card">
+        <h2>Miami Valley Raceway <span class="pill">MVR</span></h2>
+        <div class="track-meta">March 26, 2026</div>
+        <div class="subhead">Track-Level Reports</div>
+        <ul class="file-list">
+          <li><a href="MVR_LeadThreatIndex_20260326.pdf" target="_blank">MVR LeadThreatIndex</a></li>
+          <li><a href="MVR_Race_Report_20260326.pdf" target="_blank">MVR Race Report</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260326_Readable_v18_MVR.pdf" target="_blank">MVR Racecards Intelligence Report</a></li>
+          <li><a href="miamivalleymar26.pdf" target="_blank">Miami Valley Program PDF</a></li>
+        </ul>
+        <div class="subhead">Race PDFs</div>
+        <ul class="file-list">
+          <li><a href="MVR-RACE1-TROT.pdf" target="_blank">Race 1 - Trot</a></li>
+          <li><a href="MVR-RACE2-TROT.pdf" target="_blank">Race 2 - Trot</a></li>
+          <li><a href="MVR-RACE3-PACE.pdf" target="_blank">Race 3 - Pace</a></li>
+          <li><a href="MVR-RACE4-TROT.pdf" target="_blank">Race 4 - Trot</a></li>
+          <li><a href="MVR-RACE5-TROT.pdf" target="_blank">Race 5 - Trot</a></li>
+          <li><a href="MVR-RACE6-TROT.pdf" target="_blank">Race 6 - Trot</a></li>
+          <li><a href="MVR-RACE7-PACE.pdf" target="_blank">Race 7 - Pace</a></li>
+          <li><a href="MVR-RACE8-TROT.pdf" target="_blank">Race 8 - Trot</a></li>
+          <li><a href="MVR-RACE9-PACE.pdf" target="_blank">Race 9 - Pace</a></li>
+          <li><a href="MVR-RACE10-PACE.pdf" target="_blank">Race 10 - Pace</a></li>
+          <li><a href="MVR-RACE11-PACE.pdf" target="_blank">Race 11 - Pace</a></li>
+          <li><a href="MVR-RACE12-PACE.pdf" target="_blank">Race 12 - Pace</a></li>
+          <li><a href="MVR-RACE13-TROT.pdf" target="_blank">Race 13 - Trot</a></li>
+          <li><a href="MVR-RACE14-PACE.pdf" target="_blank">Race 14 - Pace</a></li>
+        </ul>
+      </div>
+
+      <div class="track-card">
+        <h2>Rosecroft Raceway <span class="pill">RCR</span></h2>
+        <div class="track-meta">March 26, 2026</div>
+        <div class="subhead">Track-Level Reports</div>
+        <ul class="file-list">
+          <li><a href="RCR_LeadThreatIndex_20260326.pdf" target="_blank">RCR LeadThreatIndex</a></li>
+          <li><a href="RCR_Race_Report_20260326.pdf" target="_blank">RCR Race Report</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260326_Readable_v18_RCR.pdf" target="_blank">RCR Racecards Intelligence Report</a></li>
+          <li><a href="rosecroftmar26.pdf" target="_blank">Rosecroft Program PDF</a></li>
+        </ul>
+        <div class="subhead">Race PDFs</div>
+        <ul class="file-list">
+          <li><a href="RCR-RACE1-PACE.pdf" target="_blank">Race 1 - Pace</a></li>
+          <li><a href="RCR-RACE2-PACE.pdf" target="_blank">Race 2 - Pace</a></li>
+          <li><a href="RCR-RACE3-TROT.pdf" target="_blank">Race 3 - Trot</a></li>
+          <li><a href="RCR-RACE4-PACE.pdf" target="_blank">Race 4 - Pace</a></li>
+          <li><a href="RCR-RACE5-PACE.pdf" target="_blank">Race 5 - Pace</a></li>
+          <li><a href="RCR-RACE6-PACE.pdf" target="_blank">Race 6 - Pace</a></li>
+          <li><a href="RCR-RACE7-PACE.pdf" target="_blank">Race 7 - Pace</a></li>
+          <li><a href="RCR-RACE8-PACE.pdf" target="_blank">Race 8 - Pace</a></li>
+          <li><a href="RCR-RACE9-PACE.pdf" target="_blank">Race 9 - Pace</a></li>
+          <li><a href="RCR-RACE10-PACE.pdf" target="_blank">Race 10 - Pace</a></li>
+          <li><a href="RCR-RACE11-PACE.pdf" target="_blank">Race 11 - Pace</a></li>
+          <li><a href="RCR-RACE12-PACE.pdf" target="_blank">Race 12 - Pace</a></li>
+          <li><a href="RCR-RACE13-TROT.pdf" target="_blank">Race 13 - Trot</a></li>
+        </ul>
+      </div>
+
+      <div class="track-card">
+        <h2>Yonkers Raceway <span class="pill">YR</span></h2>
+        <div class="track-meta">March 26, 2026</div>
+        <div class="subhead">Track-Level Reports</div>
+        <ul class="file-list">
+          <li><a href="YR_LeadThreatIndex_20260326.pdf" target="_blank">YR LeadThreatIndex</a></li>
+          <li><a href="YR_Race_Report_20260326.pdf" target="_blank">YR Race Report</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260326_Readable_v18_YR.pdf" target="_blank">YR Racecards Intelligence Report</a></li>
+          <li><a href="yonkersmar26.pdf" target="_blank">Yonkers Program PDF</a></li>
+        </ul>
+        <div class="subhead">Race PDFs</div>
+        <ul class="file-list">
+          <li><a href="YR-RACE1-PACE.pdf" target="_blank">Race 1 - Pace</a></li>
+          <li><a href="YR-RACE2-TROT.pdf" target="_blank">Race 2 - Trot</a></li>
+          <li><a href="YR-RACE3-PACE.pdf" target="_blank">Race 3 - Pace</a></li>
+          <li><a href="YR-RACE4-TROT.pdf" target="_blank">Race 4 - Trot</a></li>
+          <li><a href="YR-RACE5-PACE.pdf" target="_blank">Race 5 - Pace</a></li>
+          <li><a href="YR-RACE6-TROT.pdf" target="_blank">Race 6 - Trot</a></li>
+          <li><a href="YR-RACE7-PACE.pdf" target="_blank">Race 7 - Pace</a></li>
+          <li><a href="YR-RACE8-TROT.pdf" target="_blank">Race 8 - Trot</a></li>
+          <li><a href="YR-RACE9-TROT.pdf" target="_blank">Race 9 - Trot</a></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      Harness Elite &mdash; Daily Index for March 26, 2026
+    </div>
+  </div>
+</body>
+</html>
