@@ -1,1 +1,446 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harness Elite Reports - April 2, 2026</title>
+  <style>
+    :root{
+      --bg:#0b1020;
+      --panel:#121a2f;
+      --panel-2:#18233f;
+      --text:#f3f6ff;
+      --muted:#aab6d3;
+      --line:#2a3860;
+      --accent:#66d9ef;
+      --accent-2:#8ef0c8;
+      --gold:#ffd166;
+      --shadow:0 10px 30px rgba(0,0,0,.30);
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Arial, Helvetica, sans-serif;
+      background:linear-gradient(180deg,#09101d 0%, #0d1326 100%);
+      color:var(--text);
+    }
+    .wrap{
+      max-width:1400px;
+      margin:0 auto;
+      padding:32px 20px 60px;
+    }
+    h1{
+      margin:0 0 8px;
+      font-size:34px;
+      line-height:1.1;
+      letter-spacing:.3px;
+    }
+    .sub{
+      color:var(--muted);
+      margin-bottom:28px;
+      font-size:15px;
+    }
+    .section{
+      margin-top:30px;
+    }
+    .section h2{
+      margin:0 0 14px;
+      font-size:24px;
+      border-left:4px solid var(--accent);
+      padding-left:10px;
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:18px;
+    }
+    .card{
+      background:var(--panel);
+      border:1px solid var(--line);
+      border-radius:16px;
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .card h3{
+      margin:0;
+      padding:14px 16px;
+      background:var(--panel-2);
+      border-bottom:1px solid var(--line);
+      font-size:19px;
+      color:var(--accent-2);
+    }
+    .card .body{
+      padding:14px 16px 16px;
+    }
+    ul{
+      list-style:none;
+      padding:0;
+      margin:0;
+    }
+    li{
+      margin:0 0 8px;
+      padding:0;
+    }
+    a{
+      color:var(--text);
+      text-decoration:none;
+    }
+    a:hover{
+      color:var(--gold);
+      text-decoration:underline;
+    }
+    .report-list li,
+    .file-list li{
+      padding:8px 0;
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .report-list li:last-child,
+    .file-list li:last-child{
+      border-bottom:none;
+    }
+    .meta{
+      display:block;
+      color:var(--muted);
+      font-size:12px;
+      margin-top:2px;
+    }
+    .track-links{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:6px;
+      margin-bottom:14px;
+    }
+    .race-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:8px 12px;
+      margin-top:10px;
+    }
+    .race-grid a{
+      display:block;
+      padding:8px 10px;
+      background:rgba(255,255,255,.03);
+      border:1px solid rgba(255,255,255,.07);
+      border-radius:10px;
+      font-size:14px;
+    }
+    .pill{
+      display:inline-block;
+      margin-left:8px;
+      font-size:11px;
+      color:#0b1020;
+      background:var(--gold);
+      padding:2px 7px;
+      border-radius:999px;
+      vertical-align:middle;
+      font-weight:bold;
+    }
+    .topnav{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin:18px 0 8px;
+    }
+    .topnav a{
+      display:inline-block;
+      padding:8px 12px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:rgba(255,255,255,.03);
+      font-size:13px;
+      color:var(--muted);
+    }
+    .topnav a:hover{
+      color:var(--text);
+      border-color:var(--accent);
+      text-decoration:none;
+    }
+    footer{
+      margin-top:42px;
+      color:var(--muted);
+      font-size:12px;
+      text-align:center;
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Harness Elite Reports Index</h1>
+    <div class="sub">Complete report index for April 2, 2026</div>
+
+    <div class="topnav">
+      <a href="#general">General Reports</a>
+      <a href="#programs">Track Programs</a>
+      <a href="#dd">Dover Downs</a>
+      <a href="#flmd">Flamboro / FLMD</a>
+      <a href="#hop">Hoosier Park</a>
+      <a href="#mea">Meadows</a>
+      <a href="#mr">Monticello</a>
+      <a href="#mvr">Miami Valley</a>
+      <a href="#rcr">Rosecroft</a>
+      <a href="#yr">Yonkers</a>
+    </div>
+
+    <section class="section" id="general">
+      <h2>General Reports</h2>
+      <div class="card">
+        <div class="body">
+          <ul class="report-list">
+            <li><a href="HTB_Top20_20260402.pdf" target="_blank">HTB_Top20_20260402.pdf</a></li>
+            <li><a href="Harness_Track_Daily_Summary_20260402.pdf" target="_blank">Harness_Track_Daily_Summary_20260402.pdf</a></li>
+            <li><a href="Harness_Vertical_PayoffScore_Report_20260402.pdf" target="_blank">Harness_Vertical_PayoffScore_Report_20260402.pdf</a></li>
+            <li><a href="Harness_Wager_Bettable_Scores_AllSeq_TrackSorted_20260402.pdf" target="_blank">Harness_Wager_Bettable_Scores_AllSeq_TrackSorted_20260402.pdf</a></li>
+            <li><a href="LeadThreatIndex_Report_20260402.pdf" target="_blank">LeadThreatIndex_Report_20260402.pdf</a></li>
+            <li><a href="Likely_Improvers_Report_All.pdf" target="_blank">Likely_Improvers_Report_All.pdf</a></li>
+            <li><a href="RaceCompetitiveness_Exacta_20260402.pdf" target="_blank">RaceCompetitiveness_Exacta_20260402.pdf</a></li>
+            <li><a href="RaceCompetitiveness_Extras_ByCI_20260402.pdf" target="_blank">RaceCompetitiveness_Extras_ByCI_20260402.pdf</a></li>
+            <li><a href="RaceCompetitiveness_Extras_ByTime_20260402.pdf" target="_blank">RaceCompetitiveness_Extras_ByTime_20260402.pdf</a></li>
+            <li><a href="Race_Ratings_20260402.pdf" target="_blank">Race_Ratings_20260402.pdf</a></li>
+            <li><a href="Rebound_RC_Top3PerRace_20260402.pdf" target="_blank">Rebound_RC_Top3PerRace_20260402.pdf</a></li>
+            <li><a href="Run_of_Show_2026-04-02.pdf" target="_blank">Run_of_Show_2026-04-02.pdf</a></li>
+            <li><a href="SuperFav_AllGaits_Top150_20260402.pdf" target="_blank">SuperFav_AllGaits_Top150_20260402.pdf</a></li>
+            <li><a href="ValueExactas_Report_20260402.pdf" target="_blank">ValueExactas_Report_20260402.pdf</a></li>
+            <li><a href="Value_Plays_20260402.pdf" target="_blank">Value_Plays_20260402.pdf</a></li>
+            <li><a href="WinningStreaks_Report_20260402.pdf" target="_blank">WinningStreaks_Report_20260402.pdf</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="programs">
+      <h2>Track Programs</h2>
+      <div class="card">
+        <div class="body">
+          <ul class="file-list">
+            <li><a href="flamboroapril2.pdf" target="_blank">flamboroapril2.pdf</a></li>
+            <li><a href="hoosierparkapril2.pdf" target="_blank">hoosierparkapril2.pdf</a></li>
+            <li><a href="meadowsapril2.pdf" target="_blank">meadowsapril2.pdf</a></li>
+            <li><a href="miamivalleyapril2.pdf" target="_blank">miamivalleyapril2.pdf</a></li>
+            <li><a href="monticelloapril2.pdf" target="_blank">monticelloapril2.pdf</a></li>
+            <li><a href="rosecroftapril2.pdf" target="_blank">rosecroftapril2.pdf</a></li>
+            <li><a href="yonkersapril2.pdf" target="_blank">yonkersapril2.pdf</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Track Cards</h2>
+      <div class="grid">
+
+        <div class="card" id="dd">
+          <h3>Dover Downs (DD)</h3>
+          <div class="body">
+            <div class="track-links">
+              <a href="DD_LeadThreatIndex_20260402.pdf" target="_blank">DD_LeadThreatIndex_20260402.pdf</a>
+              <a href="DD_Race_Report_20260402.pdf" target="_blank">DD_Race_Report_20260402.pdf <span class="pill">Race Report</span></a>
+              <a href="Racecards_Intelligence_Report_20260402_Readable_v18_DD.pdf" target="_blank">Racecards_Intelligence_Report_20260402_Readable_v18_DD.pdf</a>
+            </div>
+            <div class="race-grid">
+              <a href="DD-RACE1-PACE.pdf" target="_blank">R1 Pace</a>
+              <a href="DD-RACE2-PACE.pdf" target="_blank">R2 Pace</a>
+              <a href="DD-RACE3-PACE.pdf" target="_blank">R3 Pace</a>
+              <a href="DD-RACE4-PACE.pdf" target="_blank">R4 Pace</a>
+              <a href="DD-RACE5-PACE.pdf" target="_blank">R5 Pace</a>
+              <a href="DD-RACE6-PACE.pdf" target="_blank">R6 Pace</a>
+              <a href="DD-RACE7-PACE.pdf" target="_blank">R7 Pace</a>
+              <a href="DD-RACE8-PACE.pdf" target="_blank">R8 Pace</a>
+              <a href="DD-RACE9-PACE.pdf" target="_blank">R9 Pace</a>
+              <a href="DD-RACE10-PACE.pdf" target="_blank">R10 Pace</a>
+              <a href="DD-RACE11-PACE.pdf" target="_blank">R11 Pace</a>
+              <a href="DD-RACE12-PACE.pdf" target="_blank">R12 Pace</a>
+              <a href="DD-RACE13-PACE.pdf" target="_blank">R13 Pace</a>
+              <a href="DD-RACE14-PACE.pdf" target="_blank">R14 Pace</a>
+              <a href="DD-RACE15-PACE.pdf" target="_blank">R15 Pace</a>
+              <a href="DD-RACE16-PACE.pdf" target="_blank">R16 Pace</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="flmd">
+          <h3>Flamboro (FLMD)</h3>
+          <div class="body">
+            <div class="track-links">
+              <a href="FLMD_LeadThreatIndex_20260402.pdf" target="_blank">FLMD_LeadThreatIndex_20260402.pdf</a>
+              <a href="FLMD_Race_Report_20260402.pdf" target="_blank">FLMD_Race_Report_20260402.pdf <span class="pill">Race Report</span></a>
+              <a href="Racecards_Intelligence_Report_20260402_Readable_v18_FLMD.pdf" target="_blank">Racecards_Intelligence_Report_20260402_Readable_v18_FLMD.pdf</a>
+            </div>
+            <div class="race-grid">
+              <a href="FLMD-RACE1-PACE.pdf" target="_blank">R1 Pace</a>
+              <a href="FLMD-RACE2-TROT.pdf" target="_blank">R2 Trot</a>
+              <a href="FLMD-RACE3-PACE.pdf" target="_blank">R3 Pace</a>
+              <a href="FLMD-RACE4-TROT.pdf" target="_blank">R4 Trot</a>
+              <a href="FLMD-RACE5-PACE.pdf" target="_blank">R5 Pace</a>
+              <a href="FLMD-RACE6-TROT.pdf" target="_blank">R6 Trot</a>
+              <a href="FLMD-RACE7-PACE.pdf" target="_blank">R7 Pace</a>
+              <a href="FLMD-RACE8-PACE.pdf" target="_blank">R8 Pace</a>
+              <a href="FLMD-RACE9-TROT.pdf" target="_blank">R9 Trot</a>
+              <a href="FLMD-RACE10-PACE.pdf" target="_blank">R10 Pace</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="hop">
+          <h3>Hoosier Park (HOP)</h3>
+          <div class="body">
+            <div class="track-links">
+              <a href="HOP_LeadThreatIndex_20260402.pdf" target="_blank">HOP_LeadThreatIndex_20260402.pdf</a>
+              <a href="HOP_Race_Report_20260402.pdf" target="_blank">HOP_Race_Report_20260402.pdf <span class="pill">Race Report</span></a>
+              <a href="Racecards_Intelligence_Report_20260402_Readable_v18_HOP.pdf" target="_blank">Racecards_Intelligence_Report_20260402_Readable_v18_HOP.pdf</a>
+            </div>
+            <div class="race-grid">
+              <a href="HOP-RACE1-PACE.pdf" target="_blank">R1 Pace</a>
+              <a href="HOP-RACE2-PACE.pdf" target="_blank">R2 Pace</a>
+              <a href="HOP-RACE3-TROT.pdf" target="_blank">R3 Trot</a>
+              <a href="HOP-RACE4-PACE.pdf" target="_blank">R4 Pace</a>
+              <a href="HOP-RACE5-TROT.pdf" target="_blank">R5 Trot</a>
+              <a href="HOP-RACE6-PACE.pdf" target="_blank">R6 Pace</a>
+              <a href="HOP-RACE7-PACE.pdf" target="_blank">R7 Pace</a>
+              <a href="HOP-RACE8-PACE.pdf" target="_blank">R8 Pace</a>
+              <a href="HOP-RACE9-TROT.pdf" target="_blank">R9 Trot</a>
+              <a href="HOP-RACE10-PACE.pdf" target="_blank">R10 Pace</a>
+              <a href="HOP-RACE11-PACE.pdf" target="_blank">R11 Pace</a>
+              <a href="HOP-RACE12-PACE.pdf" target="_blank">R12 Pace</a>
+              <a href="HOP-RACE13-PACE.pdf" target="_blank">R13 Pace</a>
+              <a href="HOP-RACE14-PACE.pdf" target="_blank">R14 Pace</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="mea">
+          <h3>Meadows (MEA)</h3>
+          <div class="body">
+            <div class="track-links">
+              <a href="MEA_LeadThreatIndex_20260402.pdf" target="_blank">MEA_LeadThreatIndex_20260402.pdf</a>
+              <a href="MEA_Race_Report_20260402.pdf" target="_blank">MEA_Race_Report_20260402.pdf <span class="pill">Race Report</span></a>
+              <a href="Racecards_Intelligence_Report_20260402_Readable_v18_MEA.pdf" target="_blank">Racecards_Intelligence_Report_20260402_Readable_v18_MEA.pdf</a>
+            </div>
+            <div class="race-grid">
+              <a href="MEA-RACE1-TROT.pdf" target="_blank">R1 Trot</a>
+              <a href="MEA-RACE2-TROT.pdf" target="_blank">R2 Trot</a>
+              <a href="MEA-RACE3-TROT.pdf" target="_blank">R3 Trot</a>
+              <a href="MEA-RACE4-PACE.pdf" target="_blank">R4 Pace</a>
+              <a href="MEA-RACE5-TROT.pdf" target="_blank">R5 Trot</a>
+              <a href="MEA-RACE6-TROT.pdf" target="_blank">R6 Trot</a>
+              <a href="MEA-RACE7-TROT.pdf" target="_blank">R7 Trot</a>
+              <a href="MEA-RACE8-PACE.pdf" target="_blank">R8 Pace</a>
+              <a href="MEA-RACE9-TROT.pdf" target="_blank">R9 Trot</a>
+              <a href="MEA-RACE10-PACE.pdf" target="_blank">R10 Pace</a>
+              <a href="MEA-RACE11-TROT.pdf" target="_blank">R11 Trot</a>
+              <a href="MEA-RACE12-PACE.pdf" target="_blank">R12 Pace</a>
+              <a href="MEA-RACE13-TROT.pdf" target="_blank">R13 Trot</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="mr">
+          <h3>Monticello (MR)</h3>
+          <div class="body">
+            <div class="track-links">
+              <a href="MR_LeadThreatIndex_20260402.pdf" target="_blank">MR_LeadThreatIndex_20260402.pdf</a>
+              <a href="MR_Race_Report_20260402.pdf" target="_blank">MR_Race_Report_20260402.pdf <span class="pill">Race Report</span></a>
+              <a href="Racecards_Intelligence_Report_20260402_Readable_v18_MR.pdf" target="_blank">Racecards_Intelligence_Report_20260402_Readable_v18_MR.pdf</a>
+            </div>
+            <div class="race-grid">
+              <a href="MR-RACE1-PACE.pdf" target="_blank">R1 Pace</a>
+              <a href="MR-RACE2-PACE.pdf" target="_blank">R2 Pace</a>
+              <a href="MR-RACE3-PACE.pdf" target="_blank">R3 Pace</a>
+              <a href="MR-RACE4-PACE.pdf" target="_blank">R4 Pace</a>
+              <a href="MR-RACE5-PACE.pdf" target="_blank">R5 Pace</a>
+              <a href="MR-RACE6-PACE.pdf" target="_blank">R6 Pace</a>
+              <a href="MR-RACE7-PACE.pdf" target="_blank">R7 Pace</a>
+              <a href="MR-RACE8-PACE.pdf" target="_blank">R8 Pace</a>
+              <a href="MR-RACE9-PACE.pdf" target="_blank">R9 Pace</a>
+              <a href="MR-RACE10-PACE.pdf" target="_blank">R10 Pace</a>
+              <a href="MR-RACE11-PACE.pdf" target="_blank">R11 Pace</a>
+              <a href="MR-RACE12-PACE.pdf" target="_blank">R12 Pace</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="mvr">
+          <h3>Miami Valley (MVR)</h3>
+          <div class="body">
+            <div class="track-links">
+              <a href="MVR_LeadThreatIndex_20260402.pdf" target="_blank">MVR_LeadThreatIndex_20260402.pdf</a>
+              <a href="MVR_Race_Report_20260402.pdf" target="_blank">MVR_Race_Report_20260402.pdf <span class="pill">Race Report</span></a>
+              <a href="Racecards_Intelligence_Report_20260402_Readable_v18_MVR.pdf" target="_blank">Racecards_Intelligence_Report_20260402_Readable_v18_MVR.pdf</a>
+            </div>
+            <div class="race-grid">
+              <a href="MVR-RACE1-PACE.pdf" target="_blank">R1 Pace</a>
+              <a href="MVR-RACE2-TROT.pdf" target="_blank">R2 Trot</a>
+              <a href="MVR-RACE3-PACE.pdf" target="_blank">R3 Pace</a>
+              <a href="MVR-RACE4-TROT.pdf" target="_blank">R4 Trot</a>
+              <a href="MVR-RACE5-PACE.pdf" target="_blank">R5 Pace</a>
+              <a href="MVR-RACE6-TROT.pdf" target="_blank">R6 Trot</a>
+              <a href="MVR-RACE7-PACE.pdf" target="_blank">R7 Pace</a>
+              <a href="MVR-RACE8-TROT.pdf" target="_blank">R8 Trot</a>
+              <a href="MVR-RACE9-PACE.pdf" target="_blank">R9 Pace</a>
+              <a href="MVR-RACE10-TROT.pdf" target="_blank">R10 Trot</a>
+              <a href="MVR-RACE11-PACE.pdf" target="_blank">R11 Pace</a>
+              <a href="MVR-RACE12-TROT.pdf" target="_blank">R12 Trot</a>
+              <a href="MVR-RACE13-PACE.pdf" target="_blank">R13 Pace</a>
+              <a href="MVR-RACE14-TROT.pdf" target="_blank">R14 Trot</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="rcr">
+          <h3>Rosecroft (RCR)</h3>
+          <div class="body">
+            <div class="track-links">
+              <a href="RCR_LeadThreatIndex_20260402.pdf" target="_blank">RCR_LeadThreatIndex_20260402.pdf</a>
+              <a href="RCR_Race_Report_20260402.pdf" target="_blank">RCR_Race_Report_20260402.pdf <span class="pill">Race Report</span></a>
+              <a href="Racecards_Intelligence_Report_20260402_Readable_v18_RCR.pdf" target="_blank">Racecards_Intelligence_Report_20260402_Readable_v18_RCR.pdf</a>
+            </div>
+            <div class="race-grid">
+              <a href="RCR-RACE1-PACE.pdf" target="_blank">R1 Pace</a>
+              <a href="RCR-RACE2-TROT.pdf" target="_blank">R2 Trot</a>
+              <a href="RCR-RACE3-PACE.pdf" target="_blank">R3 Pace</a>
+              <a href="RCR-RACE4-PACE.pdf" target="_blank">R4 Pace</a>
+              <a href="RCR-RACE5-PACE.pdf" target="_blank">R5 Pace</a>
+              <a href="RCR-RACE6-PACE.pdf" target="_blank">R6 Pace</a>
+              <a href="RCR-RACE7-PACE.pdf" target="_blank">R7 Pace</a>
+              <a href="RCR-RACE8-PACE.pdf" target="_blank">R8 Pace</a>
+              <a href="RCR-RACE9-PACE.pdf" target="_blank">R9 Pace</a>
+              <a href="RCR-RACE10-PACE.pdf" target="_blank">R10 Pace</a>
+              <a href="RCR-RACE11-TROT.pdf" target="_blank">R11 Trot</a>
+              <a href="RCR-RACE12-PACE.pdf" target="_blank">R12 Pace</a>
+              <a href="RCR-RACE13-PACE.pdf" target="_blank">R13 Pace</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card" id="yr">
+          <h3>Yonkers (YR)</h3>
+          <div class="body">
+            <div class="track-links">
+              <a href="YR_LeadThreatIndex_20260402.pdf" target="_blank">YR_LeadThreatIndex_20260402.pdf</a>
+              <a href="YR_Race_Report_20260402.pdf" target="_blank">YR_Race_Report_20260402.pdf <span class="pill">Race Report</span></a>
+              <a href="Racecards_Intelligence_Report_20260402_Readable_v18_YR.pdf" target="_blank">Racecards_Intelligence_Report_20260402_Readable_v18_YR.pdf</a>
+            </div>
+            <div class="race-grid">
+              <a href="YR-RACE1-PACE.pdf" target="_blank">R1 Pace</a>
+              <a href="YR-RACE2-TROT.pdf" target="_blank">R2 Trot</a>
+              <a href="YR-RACE3-PACE.pdf" target="_blank">R3 Pace</a>
+              <a href="YR-RACE4-TROT.pdf" target="_blank">R4 Trot</a>
+              <a href="YR-RACE5-TROT.pdf" target="_blank">R5 Trot</a>
+              <a href="YR-RACE6-PACE.pdf" target="_blank">R6 Pace</a>
+              <a href="YR-RACE7-TROT.pdf" target="_blank">R7 Trot</a>
+              <a href="YR-RACE8-PACE.pdf" target="_blank">R8 Pace</a>
+              <a href="YR-RACE9-PACE.pdf" target="_blank">R9 Pace</a>
+              <a href="YR-RACE10-PACE.pdf" target="_blank">R10 Pace</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <footer>
+      Harness Elite Reports Index · April 2, 2026
+    </footer>
+  </div>
+</body>
+</html>
