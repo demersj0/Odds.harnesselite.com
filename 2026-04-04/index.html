@@ -1,1 +1,599 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harness Elite Reports Index - April 4, 2026</title>
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #dbe3ee;
+      --accent: #1d4ed8;
+      --accent-dark: #1e3a8a;
+      --shadow: 0 10px 30px rgba(0,0,0,0.08);
+      --green: #eaf7ee;
+      --green-border: #b9e3c6;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    .wrap {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 28px 22px 40px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: #fff;
+      border-radius: 18px;
+      padding: 28px 30px;
+      box-shadow: var(--shadow);
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px 0;
+      font-size: 34px;
+      line-height: 1.1;
+    }
+
+    .hero p {
+      margin: 0;
+      color: #dbeafe;
+      font-size: 16px;
+    }
+
+    .section-title {
+      font-size: 24px;
+      font-weight: 700;
+      margin: 30px 0 14px;
+      color: #111827;
+    }
+
+    .reports-grid,
+    .tracks-grid {
+      display: grid;
+      gap: 18px;
+    }
+
+    .reports-grid {
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    }
+
+    .tracks-grid {
+      grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .card-header {
+      padding: 16px 18px 10px;
+      border-bottom: 1px solid var(--border);
+      background: #f8fbff;
+    }
+
+    .card-header h2,
+    .card-header h3 {
+      margin: 0;
+      font-size: 20px;
+      color: #0f172a;
+    }
+
+    .card-sub {
+      margin-top: 5px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .card-body {
+      padding: 16px 18px 18px;
+    }
+
+    .link-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .link-list li {
+      margin: 0 0 10px 0;
+    }
+
+    .link-list li:last-child {
+      margin-bottom: 0;
+    }
+
+    a.file-link {
+      color: var(--accent-dark);
+      text-decoration: none;
+      font-weight: 600;
+      word-break: break-word;
+    }
+
+    a.file-link:hover {
+      text-decoration: underline;
+      color: var(--accent);
+    }
+
+    .muted {
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .track-top-links {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+
+    .pill-link {
+      display: inline-block;
+      padding: 9px 12px;
+      background: var(--green);
+      border: 1px solid var(--green-border);
+      border-radius: 10px;
+      text-decoration: none;
+      color: #14532d;
+      font-weight: 700;
+    }
+
+    .pill-link:hover {
+      text-decoration: underline;
+    }
+
+    .race-block h4 {
+      margin: 16px 0 8px;
+      font-size: 15px;
+      color: #111827;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .race-links {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 8px 12px;
+    }
+
+    .race-links a {
+      display: block;
+      padding: 8px 10px;
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      background: #fff;
+      text-decoration: none;
+      color: #1f2937;
+      font-weight: 600;
+      font-size: 14px;
+    }
+
+    .race-links a:hover {
+      border-color: #93c5fd;
+      background: #eff6ff;
+      color: #1d4ed8;
+    }
+
+    .footer {
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .hero h1 { font-size: 28px; }
+      .tracks-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <h1>Harness Elite Reports Index</h1>
+      <p>April 4, 2026 Reports, Track Pages, Race Reports, Intelligence Reports, and Daily Summaries</p>
+    </div>
+
+    <div class="section-title">General Reports</div>
+    <div class="reports-grid">
+
+      <div class="card">
+        <div class="card-header">
+          <h3>Core Daily Reports</h3>
+          <div class="card-sub">Main daily summary and flagship outputs</div>
+        </div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a class="file-link" href="Harness_Track_Daily_Summary_20260404.pdf" target="_blank" rel="noopener noreferrer">Harness_Track_Daily_Summary_20260404.pdf</a></li>
+            <li><a class="file-link" href="Harness_Vertical_PayoffScore_Report_20260404.pdf" target="_blank" rel="noopener noreferrer">Harness_Vertical_PayoffScore_Report_20260404.pdf</a></li>
+            <li><a class="file-link" href="Harness_Wager_Bettable_Scores_AllSeq_TrackSorted_20260404.pdf" target="_blank" rel="noopener noreferrer">Harness_Wager_Bettable_Scores_AllSeq_TrackSorted_20260404.pdf</a></li>
+            <li><a class="file-link" href="Race_Ratings_20260404.pdf" target="_blank" rel="noopener noreferrer">Race_Ratings_20260404.pdf</a></li>
+            <li><a class="file-link" href="Run_of_Show_2026-04-04.pdf" target="_blank" rel="noopener noreferrer">Run_of_Show_2026-04-04.pdf</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>Lead Threat / Contender Style Reports</h3>
+          <div class="card-sub">Top-level contender and threat views</div>
+        </div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a class="file-link" href="LeadThreatIndex_Report_20260404.pdf" target="_blank" rel="noopener noreferrer">LeadThreatIndex_Report_20260404.pdf</a></li>
+            <li><a class="file-link" href="HTB_Top20_20260404.pdf" target="_blank" rel="noopener noreferrer">HTB_Top20_20260404.pdf</a></li>
+            <li><a class="file-link" href="WinningStreaks_Report_20260404.pdf" target="_blank" rel="noopener noreferrer">WinningStreaks_Report_20260404.pdf</a></li>
+            <li><a class="file-link" href="SuperFav_AllGaits_Top150_20260404.pdf" target="_blank" rel="noopener noreferrer">SuperFav_AllGaits_Top150_20260404.pdf</a></li>
+            <li><a class="file-link" href="Value_Plays_20260404.pdf" target="_blank" rel="noopener noreferrer">Value_Plays_20260404.pdf</a></li>
+            <li><a class="file-link" href="Likely_Improvers_Report_All.pdf" target="_blank" rel="noopener noreferrer">Likely_Improvers_Report_All.pdf</a></li>
+            <li><a class="file-link" href="Rebound_RC_Top3PerRace_20260404.pdf" target="_blank" rel="noopener noreferrer">Rebound_RC_Top3PerRace_20260404.pdf</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>Race Competitiveness Reports</h3>
+          <div class="card-sub">Exacta and competitiveness views</div>
+        </div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a class="file-link" href="RaceCompetitiveness_Exacta_20260404.pdf" target="_blank" rel="noopener noreferrer">RaceCompetitiveness_Exacta_20260404.pdf</a></li>
+            <li><a class="file-link" href="RaceCompetitiveness_Extras_ByCI_20260404.pdf" target="_blank" rel="noopener noreferrer">RaceCompetitiveness_Extras_ByCI_20260404.pdf</a></li>
+            <li><a class="file-link" href="RaceCompetitiveness_Extras_ByTime_20260404.pdf" target="_blank" rel="noopener noreferrer">RaceCompetitiveness_Extras_ByTime_20260404.pdf</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">
+          <h3>Racecards Intelligence Reports</h3>
+          <div class="card-sub">Readable v18 intelligence reports by track</div>
+        </div>
+        <div class="card-body">
+          <ul class="link-list">
+            <li><a class="file-link" href="Racecards_Intelligence_Report_20260404_Readable_v18_BR.pdf" target="_blank" rel="noopener noreferrer">Racecards_Intelligence_Report_20260404_Readable_v18_BR.pdf</a></li>
+            <li><a class="file-link" href="Racecards_Intelligence_Report_20260404_Readable_v18_CND.pdf" target="_blank" rel="noopener noreferrer">Racecards_Intelligence_Report_20260404_Readable_v18_CND.pdf</a></li>
+            <li><a class="file-link" href="Racecards_Intelligence_Report_20260404_Readable_v18_CUMB.pdf" target="_blank" rel="noopener noreferrer">Racecards_Intelligence_Report_20260404_Readable_v18_CUMB.pdf</a></li>
+            <li><a class="file-link" href="Racecards_Intelligence_Report_20260404_Readable_v18_FLMD.pdf" target="_blank" rel="noopener noreferrer">Racecards_Intelligence_Report_20260404_Readable_v18_FLMD.pdf</a></li>
+            <li><a class="file-link" href="Racecards_Intelligence_Report_20260404_Readable_v18_M.pdf" target="_blank" rel="noopener noreferrer">Racecards_Intelligence_Report_20260404_Readable_v18_M.pdf</a></li>
+            <li><a class="file-link" href="Racecards_Intelligence_Report_20260404_Readable_v18_NFLD.pdf" target="_blank" rel="noopener noreferrer">Racecards_Intelligence_Report_20260404_Readable_v18_NFLD.pdf</a></li>
+            <li><a class="file-link" href="Racecards_Intelligence_Report_20260404_Readable_v18_PCD.pdf" target="_blank" rel="noopener noreferrer">Racecards_Intelligence_Report_20260404_Readable_v18_PCD.pdf</a></li>
+            <li><a class="file-link" href="Racecards_Intelligence_Report_20260404_Readable_v18_STGA.pdf" target="_blank" rel="noopener noreferrer">Racecards_Intelligence_Report_20260404_Readable_v18_STGA.pdf</a></li>
+            <li><a class="file-link" href="Racecards_Intelligence_Report_20260404_Readable_v18_WBSB.pdf" target="_blank" rel="noopener noreferrer">Racecards_Intelligence_Report_20260404_Readable_v18_WBSB.pdf</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="section-title">Track Pages and Reports</div>
+    <div class="tracks-grid">
+
+      <!-- Buffalo Raceway -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Buffalo Raceway (BR)</h2>
+          <div class="card-sub">Track page, race report, lead threat report, and all race PDFs</div>
+        </div>
+        <div class="card-body">
+          <div class="track-top-links">
+            <a class="pill-link" href="buffaloapril4.pdf" target="_blank" rel="noopener noreferrer">Track Page: buffaloapril4.pdf</a>
+            <a class="pill-link" href="BR_Race_Report_20260404.pdf" target="_blank" rel="noopener noreferrer">BR_Race_Report_20260404.pdf</a>
+            <a class="pill-link" href="BR_LeadThreatIndex_20260404.pdf" target="_blank" rel="noopener noreferrer">BR_LeadThreatIndex_20260404.pdf</a>
+          </div>
+
+          <div class="race-block">
+            <h4>Race PDFs</h4>
+            <div class="race-links">
+              <a href="BR-RACE1-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 1 - Pace</a>
+              <a href="BR-RACE2-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 2 - Pace</a>
+              <a href="BR-RACE3-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 3 - Pace</a>
+              <a href="BR-RACE4-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 4 - Pace</a>
+              <a href="BR-RACE5-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 5 - Pace</a>
+              <a href="BR-RACE6-TROT.pdf" target="_blank" rel="noopener noreferrer">Race 6 - Trot</a>
+              <a href="BR-RACE7-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 7 - Pace</a>
+              <a href="BR-RACE8-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 8 - Pace</a>
+              <a href="BR-RACE9-TROT.pdf" target="_blank" rel="noopener noreferrer">Race 9 - Trot</a>
+              <a href="BR-RACE10-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 10 - Pace</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Century Downs -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Century Downs (CND)</h2>
+          <div class="card-sub">Track page, race report, lead threat report, and all race PDFs</div>
+        </div>
+        <div class="card-body">
+          <div class="track-top-links">
+            <a class="pill-link" href="centuryapril4.pdf" target="_blank" rel="noopener noreferrer">Track Page: centuryapril4.pdf</a>
+            <a class="pill-link" href="CND_Race_Report_20260404.pdf" target="_blank" rel="noopener noreferrer">CND_Race_Report_20260404.pdf</a>
+            <a class="pill-link" href="CND_LeadThreatIndex_20260404.pdf" target="_blank" rel="noopener noreferrer">CND_LeadThreatIndex_20260404.pdf</a>
+          </div>
+
+          <div class="race-block">
+            <h4>Race PDFs</h4>
+            <div class="race-links">
+              <a href="CND-RACE1-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 1 - Pace</a>
+              <a href="CND-RACE2-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 2 - Pace</a>
+              <a href="CND-RACE3-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 3 - Pace</a>
+              <a href="CND-RACE4-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 4 - Pace</a>
+              <a href="CND-RACE5-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 5 - Pace</a>
+              <a href="CND-RACE6-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 6 - Pace</a>
+              <a href="CND-RACE7-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 7 - Pace</a>
+              <a href="CND-RACE8-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 8 - Pace</a>
+              <a href="CND-RACE9-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 9 - Pace</a>
+              <a href="CND-RACE10-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 10 - Pace</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cumberland -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Cumberland (CUMB)</h2>
+          <div class="card-sub">Track page, race report, lead threat report, and all race PDFs</div>
+        </div>
+        <div class="card-body">
+          <div class="track-top-links">
+            <a class="pill-link" href="cumberlandapril4.pdf" target="_blank" rel="noopener noreferrer">Track Page: cumberlandapril4.pdf</a>
+            <a class="pill-link" href="CUMB_Race_Report_20260404.pdf" target="_blank" rel="noopener noreferrer">CUMB_Race_Report_20260404.pdf</a>
+            <a class="pill-link" href="CUMB_LeadThreatIndex_20260404.pdf" target="_blank" rel="noopener noreferrer">CUMB_LeadThreatIndex_20260404.pdf</a>
+          </div>
+
+          <div class="race-block">
+            <h4>Race PDFs</h4>
+            <div class="race-links">
+              <a href="CUMB-RACE1-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 1 - Pace</a>
+              <a href="CUMB-RACE2-TROT.pdf" target="_blank" rel="noopener noreferrer">Race 2 - Trot</a>
+              <a href="CUMB-RACE3-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 3 - Pace</a>
+              <a href="CUMB-RACE4-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 4 - Pace</a>
+              <a href="CUMB-RACE5-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 5 - Pace</a>
+              <a href="CUMB-RACE6-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 6 - Pace</a>
+              <a href="CUMB-RACE7-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 7 - Pace</a>
+              <a href="CUMB-RACE8-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 8 - Pace</a>
+              <a href="CUMB-RACE9-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 9 - Pace</a>
+              <a href="CUMB-RACE10-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 10 - Pace</a>
+              <a href="CUMB-RACE11-TROT.pdf" target="_blank" rel="noopener noreferrer">Race 11 - Trot</a>
+              <a href="CUMB-RACE12-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 12 - Pace</a>
+              <a href="CUMB-RACE13-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 13 - Pace</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Flamboro -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Flamboro (FLMD)</h2>
+          <div class="card-sub">Track page, race report, lead threat report, and all race PDFs</div>
+        </div>
+        <div class="card-body">
+          <div class="track-top-links">
+            <a class="pill-link" href="flamboroapril4.pdf" target="_blank" rel="noopener noreferrer">Track Page: flamboroapril4.pdf</a>
+            <a class="pill-link" href="FLMD_Race_Report_20260404.pdf" target="_blank" rel="noopener noreferrer">FLMD_Race_Report_20260404.pdf</a>
+            <a class="pill-link" href="FLMD_LeadThreatIndex_20260404.pdf" target="_blank" rel="noopener noreferrer">FLMD_LeadThreatIndex_20260404.pdf</a>
+          </div>
+
+          <div class="race-block">
+            <h4>Race PDFs</h4>
+            <div class="race-links">
+              <a href="FLMD-RACE1-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 1 - Pace</a>
+              <a href="FLMD-RACE2-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 2 - Pace</a>
+              <a href="FLMD-RACE3-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 3 - Pace</a>
+              <a href="FLMD-RACE4-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 4 - Pace</a>
+              <a href="FLMD-RACE5-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 5 - Pace</a>
+              <a href="FLMD-RACE6-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 6 - Pace</a>
+              <a href="FLMD-RACE7-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 7 - Pace</a>
+              <a href="FLMD-RACE8-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 8 - Pace</a>
+              <a href="FLMD-RACE9-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 9 - Pace</a>
+              <a href="FLMD-RACE10-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 10 - Pace</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Meadowlands -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Meadowlands (M)</h2>
+          <div class="card-sub">Track page, race report, lead threat report, and all race PDFs</div>
+        </div>
+        <div class="card-body">
+          <div class="track-top-links">
+            <a class="pill-link" href="meadowlandsapril4.pdf" target="_blank" rel="noopener noreferrer">Track Page: meadowlandsapril4.pdf</a>
+            <a class="pill-link" href="M_Race_Report_20260404.pdf" target="_blank" rel="noopener noreferrer">M_Race_Report_20260404.pdf</a>
+            <a class="pill-link" href="M_LeadThreatIndex_20260404.pdf" target="_blank" rel="noopener noreferrer">M_LeadThreatIndex_20260404.pdf</a>
+          </div>
+
+          <div class="race-block">
+            <h4>Race PDFs</h4>
+            <div class="race-links">
+              <a href="M-RACE1-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 1 - Pace</a>
+              <a href="M-RACE2-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 2 - Pace</a>
+              <a href="M-RACE3-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 3 - Pace</a>
+              <a href="M-RACE4-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 4 - Pace</a>
+              <a href="M-RACE5-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 5 - Pace</a>
+              <a href="M-RACE6-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 6 - Pace</a>
+              <a href="M-RACE7-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 7 - Pace</a>
+              <a href="M-RACE8-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 8 - Pace</a>
+              <a href="M-RACE9-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 9 - Pace</a>
+              <a href="M-RACE10-TROT.pdf" target="_blank" rel="noopener noreferrer">Race 10 - Trot</a>
+              <a href="M-RACE11-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 11 - Pace</a>
+              <a href="M-RACE12-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 12 - Pace</a>
+              <a href="M-RACE13-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 13 - Pace</a>
+              <a href="M-RACE14-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 14 - Pace</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Northfield -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Northfield (NFLD)</h2>
+          <div class="card-sub">Track page, race report, lead threat report, and all race PDFs</div>
+        </div>
+        <div class="card-body">
+          <div class="track-top-links">
+            <a class="pill-link" href="northfieldapril4.pdf" target="_blank" rel="noopener noreferrer">Track Page: northfieldapril4.pdf</a>
+            <a class="pill-link" href="NFLD_Race_Report_20260404.pdf" target="_blank" rel="noopener noreferrer">NFLD_Race_Report_20260404.pdf</a>
+            <a class="pill-link" href="NFLD_LeadThreatIndex_20260404.pdf" target="_blank" rel="noopener noreferrer">NFLD_LeadThreatIndex_20260404.pdf</a>
+          </div>
+
+          <div class="race-block">
+            <h4>Race PDFs</h4>
+            <div class="race-links">
+              <a href="NFLD-RACE1-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 1 - Pace</a>
+              <a href="NFLD-RACE2-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 2 - Pace</a>
+              <a href="NFLD-RACE3-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 3 - Pace</a>
+              <a href="NFLD-RACE4-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 4 - Pace</a>
+              <a href="NFLD-RACE5-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 5 - Pace</a>
+              <a href="NFLD-RACE6-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 6 - Pace</a>
+              <a href="NFLD-RACE7-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 7 - Pace</a>
+              <a href="NFLD-RACE8-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 8 - Pace</a>
+              <a href="NFLD-RACE9-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 9 - Pace</a>
+              <a href="NFLD-RACE10-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 10 - Pace</a>
+              <a href="NFLD-RACE11-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 11 - Pace</a>
+              <a href="NFLD-RACE12-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 12 - Pace</a>
+              <a href="NFLD-RACE13-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 13 - Pace</a>
+              <a href="NFLD-RACE14-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 14 - Pace</a>
+              <a href="NFLD-RACE15-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 15 - Pace</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pocono -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Pocono (PCD)</h2>
+          <div class="card-sub">Track page, race report, lead threat report, and all race PDFs</div>
+        </div>
+        <div class="card-body">
+          <div class="track-top-links">
+            <a class="pill-link" href="poconoapril4.pdf" target="_blank" rel="noopener noreferrer">Track Page: poconoapril4.pdf</a>
+            <a class="pill-link" href="PCD_Race_Report_20260404.pdf" target="_blank" rel="noopener noreferrer">PCD_Race_Report_20260404.pdf</a>
+            <a class="pill-link" href="PCD_LeadThreatIndex_20260404.pdf" target="_blank" rel="noopener noreferrer">PCD_LeadThreatIndex_20260404.pdf</a>
+          </div>
+
+          <div class="race-block">
+            <h4>Race PDFs</h4>
+            <div class="race-links">
+              <a href="PCD-RACE1-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 1 - Pace</a>
+              <a href="PCD-RACE2-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 2 - Pace</a>
+              <a href="PCD-RACE3-TROT.pdf" target="_blank" rel="noopener noreferrer">Race 3 - Trot</a>
+              <a href="PCD-RACE4-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 4 - Pace</a>
+              <a href="PCD-RACE5-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 5 - Pace</a>
+              <a href="PCD-RACE6-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 6 - Pace</a>
+              <a href="PCD-RACE7-TROT.pdf" target="_blank" rel="noopener noreferrer">Race 7 - Trot</a>
+              <a href="PCD-RACE8-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 8 - Pace</a>
+              <a href="PCD-RACE9-TROT.pdf" target="_blank" rel="noopener noreferrer">Race 9 - Trot</a>
+              <a href="PCD-RACE10-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 10 - Pace</a>
+              <a href="PCD-RACE11-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 11 - Pace</a>
+              <a href="PCD-RACE12-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 12 - Pace</a>
+              <a href="PCD-RACE13-TROT.pdf" target="_blank" rel="noopener noreferrer">Race 13 - Trot</a>
+              <a href="PCD-RACE14-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 14 - Pace</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Saratoga -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Saratoga (STGA)</h2>
+          <div class="card-sub">Track page, race report, lead threat report, and all race PDFs</div>
+        </div>
+        <div class="card-body">
+          <div class="track-top-links">
+            <a class="pill-link" href="saratogaapril4.pdf" target="_blank" rel="noopener noreferrer">Track Page: saratogaapril4.pdf</a>
+            <a class="pill-link" href="STGA_Race_Report_20260404.pdf" target="_blank" rel="noopener noreferrer">STGA_Race_Report_20260404.pdf</a>
+            <a class="pill-link" href="STGA_LeadThreatIndex_20260404.pdf" target="_blank" rel="noopener noreferrer">STGA_LeadThreatIndex_20260404.pdf</a>
+          </div>
+
+          <div class="race-block">
+            <h4>Race PDFs</h4>
+            <div class="race-links">
+              <a href="STGA-RACE1-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 1 - Pace</a>
+              <a href="STGA-RACE2-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 2 - Pace</a>
+              <a href="STGA-RACE3-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 3 - Pace</a>
+              <a href="STGA-RACE4-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 4 - Pace</a>
+              <a href="STGA-RACE5-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 5 - Pace</a>
+              <a href="STGA-RACE6-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 6 - Pace</a>
+              <a href="STGA-RACE7-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 7 - Pace</a>
+              <a href="STGA-RACE8-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 8 - Pace</a>
+              <a href="STGA-RACE9-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 9 - Pace</a>
+              <a href="STGA-RACE10-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 10 - Pace</a>
+              <a href="STGA-RACE11-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 11 - Pace</a>
+              <a href="STGA-RACE12-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 12 - Pace</a>
+              <a href="STGA-RACE13-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 13 - Pace</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Woodbine -->
+      <div class="card">
+        <div class="card-header">
+          <h2>Woodbine Mohawk (WBSB)</h2>
+          <div class="card-sub">Track page, race report, lead threat report, and all race PDFs</div>
+        </div>
+        <div class="card-body">
+          <div class="track-top-links">
+            <a class="pill-link" href="woodbineapril4.pdf" target="_blank" rel="noopener noreferrer">Track Page: woodbineapril4.pdf</a>
+            <a class="pill-link" href="WBSB_Race_Report_20260404.pdf" target="_blank" rel="noopener noreferrer">WBSB_Race_Report_20260404.pdf</a>
+            <a class="pill-link" href="WBSB_LeadThreatIndex_20260404.pdf" target="_blank" rel="noopener noreferrer">WBSB_LeadThreatIndex_20260404.pdf</a>
+          </div>
+
+          <div class="race-block">
+            <h4>Race PDFs</h4>
+            <div class="race-links">
+              <a href="WBSB-RACE1-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 1 - Pace</a>
+              <a href="WBSB-RACE2-TROT.pdf" target="_blank" rel="noopener noreferrer">Race 2 - Trot</a>
+              <a href="WBSB-RACE3-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 3 - Pace</a>
+              <a href="WBSB-RACE4-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 4 - Pace</a>
+              <a href="WBSB-RACE5-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 5 - Pace</a>
+              <a href="WBSB-RACE6-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 6 - Pace</a>
+              <a href="WBSB-RACE7-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 7 - Pace</a>
+              <a href="WBSB-RACE8-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 8 - Pace</a>
+              <a href="WBSB-RACE9-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 9 - Pace</a>
+              <a href="WBSB-RACE10-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 10 - Pace</a>
+              <a href="WBSB-RACE11-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 11 - Pace</a>
+              <a href="WBSB-RACE12-PACE.pdf" target="_blank" rel="noopener noreferrer">Race 12 - Pace</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      Harness Elite Report Index • Generated for April 4, 2026
+    </div>
+  </div>
+</body>
+</html>
