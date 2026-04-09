@@ -1,1 +1,514 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harness Elite Reports Index - April 9, 2026</title>
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #121933;
+      --panel-2: #182142;
+      --text: #e8ecf7;
+      --muted: #aab4d6;
+      --accent: #58a6ff;
+      --accent-2: #7ee787;
+      --border: rgba(255,255,255,0.08);
+      --shadow: 0 8px 24px rgba(0,0,0,0.28);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #0a0f1f 0%, #11182f 100%);
+      color: var(--text);
+      line-height: 1.45;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1500px;
+      margin: 0 auto;
+      padding: 28px 20px 48px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #182142 0%, #10182f 100%);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px 30px;
+      box-shadow: var(--shadow);
+      margin-bottom: 28px;
+    }
+
+    .hero h1 {
+      margin: 0 0 8px;
+      font-size: 34px;
+      line-height: 1.15;
+      color: #ffffff;
+    }
+
+    .hero p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .section-title {
+      margin: 30px 0 14px;
+      font-size: 22px;
+      color: #ffffff;
+      border-left: 4px solid var(--accent);
+      padding-left: 12px;
+    }
+
+    .quick-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 18px;
+    }
+
+    .quick-links a {
+      display: inline-block;
+      background: rgba(88,166,255,0.12);
+      border: 1px solid rgba(88,166,255,0.28);
+      color: #dbeafe;
+      padding: 9px 12px;
+      border-radius: 999px;
+      font-size: 14px;
+    }
+
+    .reports-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 16px;
+    }
+
+    .card {
+      background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px 18px 16px;
+      box-shadow: var(--shadow);
+    }
+
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 18px;
+      color: #ffffff;
+    }
+
+    .card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .card li {
+      padding: 7px 0;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      font-size: 14px;
+    }
+
+    .card li:last-child {
+      border-bottom: 0;
+    }
+
+    .track-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 18px;
+    }
+
+    .track-card {
+      background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+
+    .track-header {
+      padding: 16px 18px;
+      background: linear-gradient(90deg, rgba(88,166,255,0.18), rgba(126,231,135,0.12));
+      border-bottom: 1px solid var(--border);
+    }
+
+    .track-header h3 {
+      margin: 0 0 6px;
+      font-size: 20px;
+      color: #ffffff;
+    }
+
+    .track-links,
+    .race-links {
+      padding: 14px 18px 18px;
+    }
+
+    .track-links h4,
+    .race-links h4 {
+      margin: 0 0 10px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--accent-2);
+    }
+
+    .link-list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 8px;
+    }
+
+    .link-list a {
+      display: block;
+      padding: 9px 10px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(255,255,255,0.05);
+      font-size: 14px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 8px;
+    }
+
+    .program-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 12px;
+    }
+
+    .program-grid a {
+      display: block;
+      padding: 12px 14px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, #121933, #161f3e);
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow);
+      font-size: 14px;
+    }
+
+    .footer {
+      margin-top: 36px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 700px) {
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+
+      .hero h1 {
+        font-size: 28px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section class="hero">
+      <h1>Harness Elite Reports Index</h1>
+      <p>Full report index for April 9, 2026. General reports appear first, followed by track-specific report cards and track program PDFs. All links open in new tabs.</p>
+      <div class="quick-links">
+        <a href="#general" target="_blank">General Reports</a>
+        <a href="#tracks" target="_blank">Track Report Cards</a>
+        <a href="#programs" target="_blank">Track Program PDFs</a>
+      </div>
+    </section>
+
+    <h2 class="section-title" id="general">General Reports</h2>
+    <div class="reports-grid">
+      <div class="card">
+        <h3>Daily Core Reports</h3>
+        <ul>
+          <li><a href="Contenders_Report_20260409.pdf" target="_blank">Contenders_Report_20260409.pdf</a></li>
+          <li><a href="HTB_Top20_20260409.pdf" target="_blank">HTB_Top20_20260409.pdf</a></li>
+          <li><a href="Harness_Track_Daily_Summary_20260409.pdf" target="_blank">Harness_Track_Daily_Summary_20260409.pdf</a></li>
+          <li><a href="Harness_Vertical_PayoffScore_Report_20260409.pdf" target="_blank">Harness_Vertical_PayoffScore_Report_20260409.pdf</a></li>
+          <li><a href="Harness_Wager_Bettable_Scores_AllSeq_TrackSorted_20260409.pdf" target="_blank">Harness_Wager_Bettable_Scores_AllSeq_TrackSorted_20260409.pdf</a></li>
+          <li><a href="LeadThreatIndex_Report_20260409.pdf" target="_blank">LeadThreatIndex_Report_20260409.pdf</a></li>
+          <li><a href="Likely_Improvers_Report_All.pdf" target="_blank">Likely_Improvers_Report_All.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Race Intelligence & Ratings</h3>
+        <ul>
+          <li><a href="RaceCompetitiveness_Exacta_20260409.pdf" target="_blank">RaceCompetitiveness_Exacta_20260409.pdf</a></li>
+          <li><a href="RaceCompetitiveness_Extras_ByCI_20260409.pdf" target="_blank">RaceCompetitiveness_Extras_ByCI_20260409.pdf</a></li>
+          <li><a href="RaceCompetitiveness_Extras_ByTime_20260409.pdf" target="_blank">RaceCompetitiveness_Extras_ByTime_20260409.pdf</a></li>
+          <li><a href="Race_Ratings_20260409.pdf" target="_blank">Race_Ratings_20260409.pdf</a></li>
+          <li><a href="Rebound_RC_Top3PerRace_20260409.pdf" target="_blank">Rebound_RC_Top3PerRace_20260409.pdf</a></li>
+          <li><a href="Run_of_Show_2026-04-09.pdf" target="_blank">Run_of_Show_2026-04-09.pdf</a></li>
+          <li><a href="SuperFav_AllGaits_Top150_20260409.pdf" target="_blank">SuperFav_AllGaits_Top150_20260409.pdf</a></li>
+          <li><a href="Value_Plays_20260409.pdf" target="_blank">Value_Plays_20260409.pdf</a></li>
+          <li><a href="WinningStreaks_Report_20260409.pdf" target="_blank">WinningStreaks_Report_20260409.pdf</a></li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>Readable Racecards Intelligence Reports</h3>
+        <ul>
+          <li><a href="Racecards_Intelligence_Report_20260409_Readable_v18_FLMD.pdf" target="_blank">Racecards_Intelligence_Report_20260409_Readable_v18_FLMD.pdf</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260409_Readable_v18_HOP.pdf" target="_blank">Racecards_Intelligence_Report_20260409_Readable_v18_HOP.pdf</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260409_Readable_v18_MEA.pdf" target="_blank">Racecards_Intelligence_Report_20260409_Readable_v18_MEA.pdf</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260409_Readable_v18_MR.pdf" target="_blank">Racecards_Intelligence_Report_20260409_Readable_v18_MR.pdf</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260409_Readable_v18_MVR.pdf" target="_blank">Racecards_Intelligence_Report_20260409_Readable_v18_MVR.pdf</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260409_Readable_v18_RCR.pdf" target="_blank">Racecards_Intelligence_Report_20260409_Readable_v18_RCR.pdf</a></li>
+          <li><a href="Racecards_Intelligence_Report_20260409_Readable_v18_YR.pdf" target="_blank">Racecards_Intelligence_Report_20260409_Readable_v18_YR.pdf</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h2 class="section-title" id="tracks">Track Report Cards</h2>
+    <div class="track-grid">
+
+      <div class="track-card">
+        <div class="track-header">
+          <h3>FLMD</h3>
+        </div>
+        <div class="track-links">
+          <h4>Track Reports</h4>
+          <div class="link-list">
+            <a href="FLMD_LeadThreatIndex_20260409.pdf" target="_blank">FLMD_LeadThreatIndex_20260409.pdf</a>
+            <a href="FLMD_Race_Report_20260409.pdf" target="_blank">FLMD_Race_Report_20260409.pdf</a>
+          </div>
+        </div>
+        <div class="race-links">
+          <h4>Race PDFs</h4>
+          <div class="two-col">
+            <a href="FLMD-RACE1-PACE.pdf" target="_blank">FLMD-RACE1-PACE.pdf</a>
+            <a href="FLMD-RACE2-TROT.pdf" target="_blank">FLMD-RACE2-TROT.pdf</a>
+            <a href="FLMD-RACE3-TROT.pdf" target="_blank">FLMD-RACE3-TROT.pdf</a>
+            <a href="FLMD-RACE4-PACE.pdf" target="_blank">FLMD-RACE4-PACE.pdf</a>
+            <a href="FLMD-RACE5-TROT.pdf" target="_blank">FLMD-RACE5-TROT.pdf</a>
+            <a href="FLMD-RACE6-PACE.pdf" target="_blank">FLMD-RACE6-PACE.pdf</a>
+            <a href="FLMD-RACE7-PACE.pdf" target="_blank">FLMD-RACE7-PACE.pdf</a>
+            <a href="FLMD-RACE8-TROT.pdf" target="_blank">FLMD-RACE8-TROT.pdf</a>
+            <a href="FLMD-RACE9-PACE.pdf" target="_blank">FLMD-RACE9-PACE.pdf</a>
+            <a href="FLMD-RACE10-TROT.pdf" target="_blank">FLMD-RACE10-TROT.pdf</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-header">
+          <h3>HOP</h3>
+        </div>
+        <div class="track-links">
+          <h4>Track Reports</h4>
+          <div class="link-list">
+            <a href="HOP_LeadThreatIndex_20260409.pdf" target="_blank">HOP_LeadThreatIndex_20260409.pdf</a>
+            <a href="HOP_Race_Report_20260409.pdf" target="_blank">HOP_Race_Report_20260409.pdf</a>
+          </div>
+        </div>
+        <div class="race-links">
+          <h4>Race PDFs</h4>
+          <div class="two-col">
+            <a href="HOP-RACE1-PACE.pdf" target="_blank">HOP-RACE1-PACE.pdf</a>
+            <a href="HOP-RACE2-PACE.pdf" target="_blank">HOP-RACE2-PACE.pdf</a>
+            <a href="HOP-RACE3-PACE.pdf" target="_blank">HOP-RACE3-PACE.pdf</a>
+            <a href="HOP-RACE4-PACE.pdf" target="_blank">HOP-RACE4-PACE.pdf</a>
+            <a href="HOP-RACE5-PACE.pdf" target="_blank">HOP-RACE5-PACE.pdf</a>
+            <a href="HOP-RACE6-PACE.pdf" target="_blank">HOP-RACE6-PACE.pdf</a>
+            <a href="HOP-RACE7-PACE.pdf" target="_blank">HOP-RACE7-PACE.pdf</a>
+            <a href="HOP-RACE8-PACE.pdf" target="_blank">HOP-RACE8-PACE.pdf</a>
+            <a href="HOP-RACE9-PACE.pdf" target="_blank">HOP-RACE9-PACE.pdf</a>
+            <a href="HOP-RACE10-TROT.pdf" target="_blank">HOP-RACE10-TROT.pdf</a>
+            <a href="HOP-RACE11-PACE.pdf" target="_blank">HOP-RACE11-PACE.pdf</a>
+            <a href="HOP-RACE12-PACE.pdf" target="_blank">HOP-RACE12-PACE.pdf</a>
+            <a href="HOP-RACE13-TROT.pdf" target="_blank">HOP-RACE13-TROT.pdf</a>
+            <a href="HOP-RACE14-PACE.pdf" target="_blank">HOP-RACE14-PACE.pdf</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-header">
+          <h3>MEA</h3>
+        </div>
+        <div class="track-links">
+          <h4>Track Reports</h4>
+          <div class="link-list">
+            <a href="MEA_LeadThreatIndex_20260409.pdf" target="_blank">MEA_LeadThreatIndex_20260409.pdf</a>
+            <a href="MEA_Race_Report_20260409.pdf" target="_blank">MEA_Race_Report_20260409.pdf</a>
+          </div>
+        </div>
+        <div class="race-links">
+          <h4>Race PDFs</h4>
+          <div class="two-col">
+            <a href="MEA-RACE1-TROT.pdf" target="_blank">MEA-RACE1-TROT.pdf</a>
+            <a href="MEA-RACE2-TROT.pdf" target="_blank">MEA-RACE2-TROT.pdf</a>
+            <a href="MEA-RACE3-TROT.pdf" target="_blank">MEA-RACE3-TROT.pdf</a>
+            <a href="MEA-RACE4-PACE.pdf" target="_blank">MEA-RACE4-PACE.pdf</a>
+            <a href="MEA-RACE5-TROT.pdf" target="_blank">MEA-RACE5-TROT.pdf</a>
+            <a href="MEA-RACE6-PACE.pdf" target="_blank">MEA-RACE6-PACE.pdf</a>
+            <a href="MEA-RACE7-TROT.pdf" target="_blank">MEA-RACE7-TROT.pdf</a>
+            <a href="MEA-RACE8-PACE.pdf" target="_blank">MEA-RACE8-PACE.pdf</a>
+            <a href="MEA-RACE9-TROT.pdf" target="_blank">MEA-RACE9-TROT.pdf</a>
+            <a href="MEA-RACE10-TROT.pdf" target="_blank">MEA-RACE10-TROT.pdf</a>
+            <a href="MEA-RACE11-PACE.pdf" target="_blank">MEA-RACE11-PACE.pdf</a>
+            <a href="MEA-RACE12-TROT.pdf" target="_blank">MEA-RACE12-TROT.pdf</a>
+            <a href="MEA-RACE13-PACE.pdf" target="_blank">MEA-RACE13-PACE.pdf</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-header">
+          <h3>MR</h3>
+        </div>
+        <div class="track-links">
+          <h4>Track Reports</h4>
+          <div class="link-list">
+            <a href="MR_LeadThreatIndex_20260409.pdf" target="_blank">MR_LeadThreatIndex_20260409.pdf</a>
+            <a href="MR_Race_Report_20260409.pdf" target="_blank">MR_Race_Report_20260409.pdf</a>
+          </div>
+        </div>
+        <div class="race-links">
+          <h4>Race PDFs</h4>
+          <div class="two-col">
+            <a href="MR-RACE1-PACE.pdf" target="_blank">MR-RACE1-PACE.pdf</a>
+            <a href="MR-RACE2-PACE.pdf" target="_blank">MR-RACE2-PACE.pdf</a>
+            <a href="MR-RACE3-PACE.pdf" target="_blank">MR-RACE3-PACE.pdf</a>
+            <a href="MR-RACE4-PACE.pdf" target="_blank">MR-RACE4-PACE.pdf</a>
+            <a href="MR-RACE5-PACE.pdf" target="_blank">MR-RACE5-PACE.pdf</a>
+            <a href="MR-RACE6-PACE.pdf" target="_blank">MR-RACE6-PACE.pdf</a>
+            <a href="MR-RACE7-PACE.pdf" target="_blank">MR-RACE7-PACE.pdf</a>
+            <a href="MR-RACE8-PACE.pdf" target="_blank">MR-RACE8-PACE.pdf</a>
+            <a href="MR-RACE9-PACE.pdf" target="_blank">MR-RACE9-PACE.pdf</a>
+            <a href="MR-RACE10-PACE.pdf" target="_blank">MR-RACE10-PACE.pdf</a>
+            <a href="MR-RACE11-PACE.pdf" target="_blank">MR-RACE11-PACE.pdf</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-header">
+          <h3>MVR</h3>
+        </div>
+        <div class="track-links">
+          <h4>Track Reports</h4>
+          <div class="link-list">
+            <a href="MVR_LeadThreatIndex_20260409.pdf" target="_blank">MVR_LeadThreatIndex_20260409.pdf</a>
+            <a href="MVR_Race_Report_20260409.pdf" target="_blank">MVR_Race_Report_20260409.pdf</a>
+          </div>
+        </div>
+        <div class="race-links">
+          <h4>Race PDFs</h4>
+          <div class="two-col">
+            <a href="MVR-RACE1-TROT.pdf" target="_blank">MVR-RACE1-TROT.pdf</a>
+            <a href="MVR-RACE2-PACE.pdf" target="_blank">MVR-RACE2-PACE.pdf</a>
+            <a href="MVR-RACE3-TROT.pdf" target="_blank">MVR-RACE3-TROT.pdf</a>
+            <a href="MVR-RACE4-TROT.pdf" target="_blank">MVR-RACE4-TROT.pdf</a>
+            <a href="MVR-RACE5-PACE.pdf" target="_blank">MVR-RACE5-PACE.pdf</a>
+            <a href="MVR-RACE6-TROT.pdf" target="_blank">MVR-RACE6-TROT.pdf</a>
+            <a href="MVR-RACE7-PACE.pdf" target="_blank">MVR-RACE7-PACE.pdf</a>
+            <a href="MVR-RACE8-TROT.pdf" target="_blank">MVR-RACE8-TROT.pdf</a>
+            <a href="MVR-RACE9-PACE.pdf" target="_blank">MVR-RACE9-PACE.pdf</a>
+            <a href="MVR-RACE10-PACE.pdf" target="_blank">MVR-RACE10-PACE.pdf</a>
+            <a href="MVR-RACE11-PACE.pdf" target="_blank">MVR-RACE11-PACE.pdf</a>
+            <a href="MVR-RACE12-TROT.pdf" target="_blank">MVR-RACE12-TROT.pdf</a>
+            <a href="MVR-RACE13-PACE.pdf" target="_blank">MVR-RACE13-PACE.pdf</a>
+            <a href="MVR-RACE14-TROT.pdf" target="_blank">MVR-RACE14-TROT.pdf</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-header">
+          <h3>RCR</h3>
+        </div>
+        <div class="track-links">
+          <h4>Track Reports</h4>
+          <div class="link-list">
+            <a href="RCR_LeadThreatIndex_20260409.pdf" target="_blank">RCR_LeadThreatIndex_20260409.pdf</a>
+            <a href="RCR_Race_Report_20260409.pdf" target="_blank">RCR_Race_Report_20260409.pdf</a>
+          </div>
+        </div>
+        <div class="race-links">
+          <h4>Race PDFs</h4>
+          <div class="two-col">
+            <a href="RCR-RACE1-TROT.pdf" target="_blank">RCR-RACE1-TROT.pdf</a>
+            <a href="RCR-RACE2-PACE.pdf" target="_blank">RCR-RACE2-PACE.pdf</a>
+            <a href="RCR-RACE3-PACE.pdf" target="_blank">RCR-RACE3-PACE.pdf</a>
+            <a href="RCR-RACE4-PACE.pdf" target="_blank">RCR-RACE4-PACE.pdf</a>
+            <a href="RCR-RACE5-TROT.pdf" target="_blank">RCR-RACE5-TROT.pdf</a>
+            <a href="RCR-RACE6-PACE.pdf" target="_blank">RCR-RACE6-PACE.pdf</a>
+            <a href="RCR-RACE7-PACE.pdf" target="_blank">RCR-RACE7-PACE.pdf</a>
+            <a href="RCR-RACE8-PACE.pdf" target="_blank">RCR-RACE8-PACE.pdf</a>
+            <a href="RCR-RACE9-PACE.pdf" target="_blank">RCR-RACE9-PACE.pdf</a>
+            <a href="RCR-RACE10-PACE.pdf" target="_blank">RCR-RACE10-PACE.pdf</a>
+            <a href="RCR-RACE11-PACE.pdf" target="_blank">RCR-RACE11-PACE.pdf</a>
+            <a href="RCR-RACE12-TROT.pdf" target="_blank">RCR-RACE12-TROT.pdf</a>
+            <a href="RCR-RACE13-PACE.pdf" target="_blank">RCR-RACE13-PACE.pdf</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="track-card">
+        <div class="track-header">
+          <h3>YR</h3>
+        </div>
+        <div class="track-links">
+          <h4>Track Reports</h4>
+          <div class="link-list">
+            <a href="YR_LeadThreatIndex_20260409.pdf" target="_blank">YR_LeadThreatIndex_20260409.pdf</a>
+            <a href="YR_Race_Report_20260409.pdf" target="_blank">YR_Race_Report_20260409.pdf</a>
+          </div>
+        </div>
+        <div class="race-links">
+          <h4>Race PDFs</h4>
+          <div class="two-col">
+            <a href="YR-RACE1-PACE.pdf" target="_blank">YR-RACE1-PACE.pdf</a>
+            <a href="YR-RACE2-PACE.pdf" target="_blank">YR-RACE2-PACE.pdf</a>
+            <a href="YR-RACE3-PACE.pdf" target="_blank">YR-RACE3-PACE.pdf</a>
+            <a href="YR-RACE4-TROT.pdf" target="_blank">YR-RACE4-TROT.pdf</a>
+            <a href="YR-RACE5-TROT.pdf" target="_blank">YR-RACE5-TROT.pdf</a>
+            <a href="YR-RACE6-PACE.pdf" target="_blank">YR-RACE6-PACE.pdf</a>
+            <a href="YR-RACE7-PACE.pdf" target="_blank">YR-RACE7-PACE.pdf</a>
+            <a href="YR-RACE8-TROT.pdf" target="_blank">YR-RACE8-TROT.pdf</a>
+            <a href="YR-RACE9-TROT.pdf" target="_blank">YR-RACE9-TROT.pdf</a>
+            <a href="YR-RACE10-PACE.pdf" target="_blank">YR-RACE10-PACE.pdf</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <h2 class="section-title" id="programs">Track Program PDFs</h2>
+    <div class="program-grid">
+      <a href="flamboroapril9.pdf" target="_blank">flamboroapril9.pdf</a>
+      <a href="hoosierapril9.pdf" target="_blank">hoosierapril9.pdf</a>
+      <a href="meadowsapril9.pdf" target="_blank">meadowsapril9.pdf</a>
+      <a href="miamivalleyapril9.pdf" target="_blank">miamivalleyapril9.pdf</a>
+      <a href="monticelloapril9.pdf" target="_blank">monticelloapril9.pdf</a>
+      <a href="rosecroftapril9.pdf" target="_blank">rosecroftapril9.pdf</a>
+      <a href="yonkersapril9.pdf" target="_blank">yonkersapril9.pdf</a>
+    </div>
+
+    <div class="footer">
+      Harness Elite Index • Generated for April 9, 2026
+    </div>
+  </div>
+</body>
+</html>
