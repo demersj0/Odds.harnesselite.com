@@ -1,1 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harness Elite Reports — April 26, 2026</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --ink: #17202a;
+      --muted: #6b7280;
+      --border: #d9e2ec;
+      --accent: #0f766e;
+      --accent-dark: #0b5345;
+      --soft: #ecfdf5;
+      --shadow: 0 10px 24px rgba(15, 23, 42, 0.08);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.45;
+    }
+
+    .page {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 34px 20px 54px;
+    }
+
+    header {
+      background: linear-gradient(135deg, #0f766e, #134e4a);
+      color: #fff;
+      border-radius: 18px;
+      padding: 30px 32px;
+      box-shadow: var(--shadow);
+      margin-bottom: 26px;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+      font-size: 34px;
+      letter-spacing: -0.03em;
+    }
+
+    header p {
+      margin: 0;
+      color: rgba(255,255,255,0.86);
+      font-size: 16px;
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+      margin-bottom: 26px;
+    }
+
+    .summary-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px 20px;
+      box-shadow: var(--shadow);
+    }
+
+    .summary-card .label {
+      color: var(--muted);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 6px;
+    }
+
+    .summary-card .value {
+      font-size: 28px;
+      font-weight: 800;
+      color: var(--accent-dark);
+    }
+
+    section {
+      margin: 26px 0;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 12px;
+    }
+
+    .section-title h2 {
+      margin: 0;
+      font-size: 23px;
+      letter-spacing: -0.02em;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--accent-dark);
+      background: var(--soft);
+      border: 1px solid #a7f3d0;
+      white-space: nowrap;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    .track-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+      display: flex;
+      flex-direction: column;
+      min-height: 156px;
+    }
+
+    .track-code {
+      font-size: 24px;
+      font-weight: 900;
+      margin: 0 0 2px;
+      color: var(--accent-dark);
+      letter-spacing: -0.03em;
+    }
+
+    .track-name {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 13px;
+      min-height: 19px;
+    }
+
+    .link-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: grid;
+      gap: 9px;
+    }
+
+    .link-list a, .button-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--ink);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 10px 11px;
+      background: #fbfdff;
+      font-size: 14px;
+      font-weight: 700;
+      transition: transform 0.12s ease, border-color 0.12s ease, background 0.12s ease;
+    }
+
+    .link-list a:hover, .button-link:hover {
+      transform: translateY(-1px);
+      border-color: var(--accent);
+      background: var(--soft);
+    }
+
+    .link-list span:last-child, .button-link span:last-child {
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .general-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .general-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 14px;
+    }
+
+    footer {
+      margin-top: 30px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 980px) {
+      .card-grid, .general-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .summary-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    @media (max-width: 640px) {
+      .page { padding: 22px 14px 40px; }
+      header { padding: 24px 22px; }
+      header h1 { font-size: 27px; }
+      .card-grid, .general-grid, .summary-grid { grid-template-columns: 1fr; }
+      .section-title { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header>
+      <h1>Harness Elite Reports</h1>
+      <p>Daily report index for Sunday, April 26, 2026. All links open in a new tab.</p>
+    </header>
+
+    <div class="summary-grid">
+      <div class="summary-card">
+        <div class="label">Race Reports</div>
+        <div class="value">8</div>
+      </div>
+      <div class="summary-card">
+        <div class="label">Track PDFs</div>
+        <div class="value">8</div>
+      </div>
+      <div class="summary-card">
+        <div class="label">Total Files</div>
+        <div class="value">16</div>
+      </div>
+    </div>
+
+    <section>
+      <div class="section-title">
+        <h2>Race Reports</h2>
+        <span class="badge">8 files</span>
+      </div>
+      <div class="card-grid">
+        <article class="track-card">
+          <h3 class="track-code">BANG</h3>
+          <p class="track-name">Bangor Raceway</p>
+          <ul class="link-list">
+            <li><a href="BANG_Race_Report_20260426.pdf" target="_blank" rel="noopener"><span>Race Report</span><span>PDF</span></a></li>
+          </ul>
+        </article>
+        <article class="track-card">
+          <h3 class="track-code">FLMD</h3>
+          <p class="track-name">Flamboro Downs</p>
+          <ul class="link-list">
+            <li><a href="FLMD_Race_Report_20260426.pdf" target="_blank" rel="noopener"><span>Race Report</span><span>PDF</span></a></li>
+          </ul>
+        </article>
+        <article class="track-card">
+          <h3 class="track-code">MVR</h3>
+          <p class="track-name">Miami Valley Raceway</p>
+          <ul class="link-list">
+            <li><a href="MVR_Race_Report_20260426.pdf" target="_blank" rel="noopener"><span>Race Report</span><span>PDF</span></a></li>
+          </ul>
+        </article>
+        <article class="track-card">
+          <h3 class="track-code">NFLD</h3>
+          <p class="track-name">Northfield Park</p>
+          <ul class="link-list">
+            <li><a href="NFLD_Race_Report_20260426.pdf" target="_blank" rel="noopener"><span>Race Report</span><span>PDF</span></a></li>
+          </ul>
+        </article>
+        <article class="track-card">
+          <h3 class="track-code">PHL</h3>
+          <p class="track-name">Harrah's Philadelphia</p>
+          <ul class="link-list">
+            <li><a href="PHL_Race_Report_20260426.pdf" target="_blank" rel="noopener"><span>Race Report</span><span>PDF</span></a></li>
+          </ul>
+        </article>
+        <article class="track-card">
+          <h3 class="track-code">STGA</h3>
+          <p class="track-name">Saratoga Casino Hotel</p>
+          <ul class="link-list">
+            <li><a href="STGA_Race_Report_20260426.pdf" target="_blank" rel="noopener"><span>Race Report</span><span>PDF</span></a></li>
+          </ul>
+        </article>
+        <article class="track-card">
+          <h3 class="track-code">WBSB</h3>
+          <p class="track-name">Woodbine Mohawk Park</p>
+          <ul class="link-list">
+            <li><a href="WBSB_Race_Report_20260426.pdf" target="_blank" rel="noopener"><span>Race Report</span><span>PDF</span></a></li>
+          </ul>
+        </article>
+        <article class="track-card">
+          <h3 class="track-code">WDSTK</h3>
+          <p class="track-name">Woodstock Raceway</p>
+          <ul class="link-list">
+            <li><a href="WDSTK_Race_Report_20260426.pdf" target="_blank" rel="noopener"><span>Race Report</span><span>PDF</span></a></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-title">
+        <h2>Track PDFs</h2>
+        <span class="badge">8 files</span>
+      </div>
+      <div class="general-grid">
+        <div class="general-card"><a class="button-link" href="bangorapril26.pdf" target="_blank" rel="noopener"><span>Bangor — April 26</span><span>PDF</span></a></div>
+        <div class="general-card"><a class="button-link" href="flamboroapril26.pdf" target="_blank" rel="noopener"><span>Flamboro — April 26</span><span>PDF</span></a></div>
+        <div class="general-card"><a class="button-link" href="harrahsapril26.pdf" target="_blank" rel="noopener"><span>Harrah's — April 26</span><span>PDF</span></a></div>
+        <div class="general-card"><a class="button-link" href="miamivalleyapril26.pdf" target="_blank" rel="noopener"><span>Miami Valley — April 26</span><span>PDF</span></a></div>
+        <div class="general-card"><a class="button-link" href="northfieldapril26.pdf" target="_blank" rel="noopener"><span>Northfield — April 26</span><span>PDF</span></a></div>
+        <div class="general-card"><a class="button-link" href="saratogaapril26.pdf" target="_blank" rel="noopener"><span>Saratoga — April 26</span><span>PDF</span></a></div>
+        <div class="general-card"><a class="button-link" href="shenandoahapril26.pdf" target="_blank" rel="noopener"><span>Shenandoah — April 26</span><span>PDF</span></a></div>
+        <div class="general-card"><a class="button-link" href="woodbineapril26.pdf" target="_blank" rel="noopener"><span>Woodbine — April 26</span><span>PDF</span></a></div>
+      </div>
+    </section>
+
+    <footer>
+      Harness Elite Daily Index · April 26, 2026
+    </footer>
+  </main>
+</body>
+</html>
 
