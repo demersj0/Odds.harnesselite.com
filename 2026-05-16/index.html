@@ -1,1 +1,638 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Harness Elite Index – May 16, 2026</title>
+<style>
+:root {
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --ink: #102033;
+  --muted: #667085;
+  --line: #dfe5ef;
+  --blue: #1d4ed8;
+  --blue-soft: #eaf1ff;
+  --green: #047857;
+  --green-soft: #e9f8f1;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+}
+header {
+  background: linear-gradient(135deg, #0f172a, #1e3a8a);
+  color: white;
+  padding: 34px 28px;
+}
+.wrap { max-width: 1220px; margin: 0 auto; }
+h1 { margin: 0 0 8px; font-size: 34px; letter-spacing: -0.03em; }
+.subtitle { margin: 0; color: #dbeafe; font-size: 15px; }
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 22px;
+}
+.stat {
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.20);
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-weight: 700;
+}
+main { padding: 28px; }
+.section-title {
+  margin: 28px 0 12px;
+  font-size: 22px;
+  letter-spacing: -0.02em;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 10px 28px rgba(15,23,42,.06);
+}
+.card h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+.track-card {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.report-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(185px, 1fr));
+  gap: 10px;
+}
+.race-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+}
+.category h4 {
+  margin: 0 0 8px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--muted);
+  letter-spacing: .08em;
+}
+.link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 58px;
+  text-decoration: none;
+  color: var(--ink);
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 10px 12px;
+  transition: transform .12s ease, border-color .12s ease, background .12s ease;
+}
+.link:hover {
+  transform: translateY(-1px);
+  border-color: #93c5fd;
+  background: var(--blue-soft);
+}
+.link span { font-weight: 800; font-size: 14px; }
+.link small {
+  margin-top: 4px;
+  color: var(--muted);
+  font-size: 11px;
+  overflow-wrap: anywhere;
+}
+.primary { background: var(--green-soft); border-color: #a7f3d0; }
+.primary span { color: var(--green); }
+.general-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+}
+.nav {
+  margin-top: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255,255,255,.25);
+  background: rgba(255,255,255,.10);
+  padding: 7px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+footer {
+  padding: 28px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 12px;
+}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<h1>Harness Elite Daily Index</h1>
+<p class="subtitle">May 16, 2026 — complete report hub with all available files grouped by report type and track.</p>
+<div class="stats">
+  <div class="stat">328 linked files</div>
+  <div class="stat">22 track sections</div>
+  <div class="stat">All links open in a new tab</div>
+</div>
+<div class="nav">
+<a href="#BR">Buffalo</a>
+<a href="#CND">Century Downs</a>
+<a href="#CHRTN">Charlottetown</a>
+<a href="#CUMB">First Tracks Cumberland</a>
+<a href="#FLMD">Flamboro</a>
+<a href="#HOP">Hoosier Park</a>
+<a href="#M">Meadowlands</a>
+<a href="#NFLD">NFLD</a>
+<a href="#NTSD">Northside Downs</a>
+<a href="#OAKGR">Oak Grove</a>
+<a href="#PRC">Plainridge</a>
+<a href="#PCD">Pocono Downs</a>
+<a href="#RCR">Rosecroft</a>
+<a href="#SHEN">SHEN</a>
+<a href="#STGA">Saratoga</a>
+<a href="#SCD">Scioto Downs</a>
+<a href="#MEA">The Meadows</a>
+<a href="#TGDN">Tioga Downs</a>
+<a href="#VD">Vernon Downs</a>
+<a href="#WBSB">Woodbine Mohawk</a>
+<a href="#WDSTK">Woodstock</a>
+<a href="#YR">Yonkers</a>
+</div></div></header><main><div class="wrap">
+<h2 class="section-title">General Reports</h2><div class="card"><div class="general-grid">
+<a class="link " href="Contenders_Report_20260516.pdf" target="_blank" rel="noopener"><span>Contenders Report 20260516</span><small>Contenders_Report_20260516.pdf</small></a>
+<a class="link " href="HTB_Top20_20260516.pdf" target="_blank" rel="noopener"><span>HTB Top20 20260516</span><small>HTB_Top20_20260516.pdf</small></a>
+<a class="link " href="Harness_Track_Daily_Summary_20260516.pdf" target="_blank" rel="noopener"><span>Harness Track Daily Summary 20260516</span><small>Harness_Track_Daily_Summary_20260516.pdf</small></a>
+<a class="link " href="Harness_Vertical_PayoffScore_Report_20260516.pdf" target="_blank" rel="noopener"><span>Harness Vertical PayoffScore Report 20260516</span><small>Harness_Vertical_PayoffScore_Report_20260516.pdf</small></a>
+<a class="link " href="Harness_Wager_Bettable_Scores_AllSeq_TrackSorted_20260516.pdf" target="_blank" rel="noopener"><span>Harness Wager Bettable Scores AllSeq TrackSorted 20260516</span><small>Harness_Wager_Bettable_Scores_AllSeq_TrackSorted_20260516.pdf</small></a>
+<a class="link " href="LeadThreatIndex_Report_20260516.pdf" target="_blank" rel="noopener"><span>LeadThreatIndex Report 20260516</span><small>LeadThreatIndex_Report_20260516.pdf</small></a>
+<a class="link " href="Likely_Improvers_Report_All.pdf" target="_blank" rel="noopener"><span>Likely Improvers Report All</span><small>Likely_Improvers_Report_All.pdf</small></a>
+<a class="link " href="RaceCompetitiveness_Exacta_20260516.pdf" target="_blank" rel="noopener"><span>RaceCompetitiveness Exacta 20260516</span><small>RaceCompetitiveness_Exacta_20260516.pdf</small></a>
+<a class="link " href="RaceCompetitiveness_Extras_ByCI_20260516.pdf" target="_blank" rel="noopener"><span>RaceCompetitiveness Extras ByCI 20260516</span><small>RaceCompetitiveness_Extras_ByCI_20260516.pdf</small></a>
+<a class="link " href="RaceCompetitiveness_Extras_ByTime_20260516.pdf" target="_blank" rel="noopener"><span>RaceCompetitiveness Extras ByTime 20260516</span><small>RaceCompetitiveness_Extras_ByTime_20260516.pdf</small></a>
+<a class="link " href="Race_Ratings_20260516.pdf" target="_blank" rel="noopener"><span>Race Ratings 20260516</span><small>Race_Ratings_20260516.pdf</small></a>
+<a class="link " href="Rebound_RC_Top3PerRace_20260516.pdf" target="_blank" rel="noopener"><span>Rebound RC Top3PerRace 20260516</span><small>Rebound_RC_Top3PerRace_20260516.pdf</small></a>
+<a class="link " href="SuperFav_AllGaits_Top150_20260516.pdf" target="_blank" rel="noopener"><span>SuperFav AllGaits Top150 20260516</span><small>SuperFav_AllGaits_Top150_20260516.pdf</small></a>
+<a class="link " href="Value_Plays_20260516.pdf" target="_blank" rel="noopener"><span>Value Plays 20260516</span><small>Value_Plays_20260516.pdf</small></a>
+<a class="link " href="WinningStreaks_Report_20260516.pdf" target="_blank" rel="noopener"><span>WinningStreaks Report 20260516</span><small>WinningStreaks_Report_20260516.pdf</small></a>
+</div></div>
+<h2 class="section-title" id="BR">Buffalo</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_BR_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_BR_20260516.html</small></a>
+<a class="link " href="buffalomay16.pdf" target="_blank" rel="noopener"><span>Buffalo May 16</span><small>buffalomay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_BR.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_BR.pdf</small></a>
+<a class="link " href="BR_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>BR_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="BR-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>BR-RACE1-PACE.pdf</small></a>
+<a class="link " href="BR-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>BR-RACE2-PACE.pdf</small></a>
+<a class="link " href="BR-RACE3-PACE.pdf" target="_blank" rel="noopener"><span>Race 3 – Pace</span><small>BR-RACE3-PACE.pdf</small></a>
+<a class="link " href="BR-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>BR-RACE4-PACE.pdf</small></a>
+<a class="link " href="BR-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>BR-RACE5-PACE.pdf</small></a>
+<a class="link " href="BR-RACE6-TROT.pdf" target="_blank" rel="noopener"><span>Race 6 – Trot</span><small>BR-RACE6-TROT.pdf</small></a>
+<a class="link " href="BR-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>BR-RACE7-PACE.pdf</small></a>
+<a class="link " href="BR-RACE8-TROT.pdf" target="_blank" rel="noopener"><span>Race 8 – Trot</span><small>BR-RACE8-TROT.pdf</small></a>
+<a class="link " href="BR-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>BR-RACE9-PACE.pdf</small></a>
+<a class="link " href="BR-RACE10-PACE.pdf" target="_blank" rel="noopener"><span>Race 10 – Pace</span><small>BR-RACE10-PACE.pdf</small></a>
+<a class="link " href="BR-RACE11-PACE.pdf" target="_blank" rel="noopener"><span>Race 11 – Pace</span><small>BR-RACE11-PACE.pdf</small></a>
+<a class="link " href="BR-RACE12-PACE.pdf" target="_blank" rel="noopener"><span>Race 12 – Pace</span><small>BR-RACE12-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="CND">Century Downs</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_CND_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_CND_20260516.html</small></a>
+<a class="link " href="centurydownsmay16.pdf" target="_blank" rel="noopener"><span>Centurydowns May 16</span><small>centurydownsmay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_CND.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_CND.pdf</small></a>
+<a class="link " href="CND_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>CND_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="CND-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>CND-RACE1-PACE.pdf</small></a>
+<a class="link " href="CND-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>CND-RACE2-PACE.pdf</small></a>
+<a class="link " href="CND-RACE3-PACE.pdf" target="_blank" rel="noopener"><span>Race 3 – Pace</span><small>CND-RACE3-PACE.pdf</small></a>
+<a class="link " href="CND-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>CND-RACE4-PACE.pdf</small></a>
+<a class="link " href="CND-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>CND-RACE5-PACE.pdf</small></a>
+<a class="link " href="CND-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>CND-RACE6-PACE.pdf</small></a>
+<a class="link " href="CND-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>CND-RACE7-PACE.pdf</small></a>
+<a class="link " href="CND-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>CND-RACE8-PACE.pdf</small></a>
+<a class="link " href="CND-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>CND-RACE9-PACE.pdf</small></a>
+<a class="link " href="CND-RACE10-PACE.pdf" target="_blank" rel="noopener"><span>Race 10 – Pace</span><small>CND-RACE10-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="CHRTN">Charlottetown</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_CHRTN_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_CHRTN_20260516.html</small></a>
+<a class="link " href="charlottetownmay16.pdf" target="_blank" rel="noopener"><span>Charlottetown May 16</span><small>charlottetownmay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_CHRTN.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_CHRTN.pdf</small></a>
+<a class="link " href="CHRTN_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>CHRTN_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="CHRTN-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>CHRTN-RACE1-PACE.pdf</small></a>
+<a class="link " href="CHRTN-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>CHRTN-RACE2-PACE.pdf</small></a>
+<a class="link " href="CHRTN-RACE3-PACE.pdf" target="_blank" rel="noopener"><span>Race 3 – Pace</span><small>CHRTN-RACE3-PACE.pdf</small></a>
+<a class="link " href="CHRTN-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>CHRTN-RACE4-PACE.pdf</small></a>
+<a class="link " href="CHRTN-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>CHRTN-RACE5-PACE.pdf</small></a>
+<a class="link " href="CHRTN-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>CHRTN-RACE6-PACE.pdf</small></a>
+<a class="link " href="CHRTN-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>CHRTN-RACE7-PACE.pdf</small></a>
+<a class="link " href="CHRTN-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>CHRTN-RACE8-PACE.pdf</small></a>
+<a class="link " href="CHRTN-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>CHRTN-RACE9-PACE.pdf</small></a>
+<a class="link " href="CHRTN-RACE10-PACE.pdf" target="_blank" rel="noopener"><span>Race 10 – Pace</span><small>CHRTN-RACE10-PACE.pdf</small></a>
+<a class="link " href="CHRTN-RACE11-PACE.pdf" target="_blank" rel="noopener"><span>Race 11 – Pace</span><small>CHRTN-RACE11-PACE.pdf</small></a>
+<a class="link " href="CHRTN-RACE12-PACE.pdf" target="_blank" rel="noopener"><span>Race 12 – Pace</span><small>CHRTN-RACE12-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="CUMB">First Tracks Cumberland</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_CUMB_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_CUMB_20260516.html</small></a>
+<a class="link " href="cumberlandmay16.pdf" target="_blank" rel="noopener"><span>Cumberland May 16</span><small>cumberlandmay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_CUMB.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_CUMB.pdf</small></a>
+<a class="link " href="CUMB_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>CUMB_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="CUMB-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>CUMB-RACE1-PACE.pdf</small></a>
+<a class="link " href="CUMB-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>CUMB-RACE2-PACE.pdf</small></a>
+<a class="link " href="CUMB-RACE3-PACE.pdf" target="_blank" rel="noopener"><span>Race 3 – Pace</span><small>CUMB-RACE3-PACE.pdf</small></a>
+<a class="link " href="CUMB-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>CUMB-RACE4-PACE.pdf</small></a>
+<a class="link " href="CUMB-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>CUMB-RACE5-PACE.pdf</small></a>
+<a class="link " href="CUMB-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>CUMB-RACE6-PACE.pdf</small></a>
+<a class="link " href="CUMB-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>CUMB-RACE7-PACE.pdf</small></a>
+<a class="link " href="CUMB-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>CUMB-RACE8-PACE.pdf</small></a>
+<a class="link " href="CUMB-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>CUMB-RACE9-PACE.pdf</small></a>
+<a class="link " href="CUMB-RACE10-PACE.pdf" target="_blank" rel="noopener"><span>Race 10 – Pace</span><small>CUMB-RACE10-PACE.pdf</small></a>
+<a class="link " href="CUMB-RACE11-PACE.pdf" target="_blank" rel="noopener"><span>Race 11 – Pace</span><small>CUMB-RACE11-PACE.pdf</small></a>
+<a class="link " href="CUMB-RACE12-PACE.pdf" target="_blank" rel="noopener"><span>Race 12 – Pace</span><small>CUMB-RACE12-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="FLMD">Flamboro</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_FLMD_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_FLMD_20260516.html</small></a>
+<a class="link " href="flamboiromay16.pdf" target="_blank" rel="noopener"><span>Flamboiro May 16</span><small>flamboiromay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_FLMD.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_FLMD.pdf</small></a>
+<a class="link " href="FLMD_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>FLMD_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="FLMD-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>FLMD-RACE1-PACE.pdf</small></a>
+<a class="link " href="FLMD-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>FLMD-RACE2-PACE.pdf</small></a>
+<a class="link " href="FLMD-RACE3-PACE.pdf" target="_blank" rel="noopener"><span>Race 3 – Pace</span><small>FLMD-RACE3-PACE.pdf</small></a>
+<a class="link " href="FLMD-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>FLMD-RACE4-PACE.pdf</small></a>
+<a class="link " href="FLMD-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>FLMD-RACE5-PACE.pdf</small></a>
+<a class="link " href="FLMD-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>FLMD-RACE6-PACE.pdf</small></a>
+<a class="link " href="FLMD-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>FLMD-RACE7-PACE.pdf</small></a>
+<a class="link " href="FLMD-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>FLMD-RACE8-PACE.pdf</small></a>
+<a class="link " href="FLMD-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>FLMD-RACE9-PACE.pdf</small></a>
+<a class="link " href="FLMD-RACE10-PACE.pdf" target="_blank" rel="noopener"><span>Race 10 – Pace</span><small>FLMD-RACE10-PACE.pdf</small></a>
+<a class="link " href="FLMD-RACE11-PACE.pdf" target="_blank" rel="noopener"><span>Race 11 – Pace</span><small>FLMD-RACE11-PACE.pdf</small></a>
+<a class="link " href="FLMD-RACE12-PACE.pdf" target="_blank" rel="noopener"><span>Race 12 – Pace</span><small>FLMD-RACE12-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="HOP">Hoosier Park</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_HOP_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_HOP_20260516.html</small></a>
+<a class="link " href="hoosiermay16.pdf" target="_blank" rel="noopener"><span>Hoosier May 16</span><small>hoosiermay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_HOP.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_HOP.pdf</small></a>
+<a class="link " href="HOP_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>HOP_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="HOP-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>HOP-RACE1-PACE.pdf</small></a>
+<a class="link " href="HOP-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>HOP-RACE2-PACE.pdf</small></a>
+<a class="link " href="HOP-RACE3-TROT.pdf" target="_blank" rel="noopener"><span>Race 3 – Trot</span><small>HOP-RACE3-TROT.pdf</small></a>
+<a class="link " href="HOP-RACE4-TROT.pdf" target="_blank" rel="noopener"><span>Race 4 – Trot</span><small>HOP-RACE4-TROT.pdf</small></a>
+<a class="link " href="HOP-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>HOP-RACE5-PACE.pdf</small></a>
+<a class="link " href="HOP-RACE6-TROT.pdf" target="_blank" rel="noopener"><span>Race 6 – Trot</span><small>HOP-RACE6-TROT.pdf</small></a>
+<a class="link " href="HOP-RACE7-TROT.pdf" target="_blank" rel="noopener"><span>Race 7 – Trot</span><small>HOP-RACE7-TROT.pdf</small></a>
+<a class="link " href="HOP-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>HOP-RACE8-PACE.pdf</small></a>
+<a class="link " href="HOP-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>HOP-RACE9-PACE.pdf</small></a>
+<a class="link " href="HOP-RACE10-TROT.pdf" target="_blank" rel="noopener"><span>Race 10 – Trot</span><small>HOP-RACE10-TROT.pdf</small></a>
+<a class="link " href="HOP-RACE11-PACE.pdf" target="_blank" rel="noopener"><span>Race 11 – Pace</span><small>HOP-RACE11-PACE.pdf</small></a>
+<a class="link " href="HOP-RACE12-PACE.pdf" target="_blank" rel="noopener"><span>Race 12 – Pace</span><small>HOP-RACE12-PACE.pdf</small></a>
+<a class="link " href="HOP-RACE13-PACE.pdf" target="_blank" rel="noopener"><span>Race 13 – Pace</span><small>HOP-RACE13-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="M">Meadowlands</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_M_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_M_20260516.html</small></a>
+<a class="link " href="meadowlandsmay16.pdf" target="_blank" rel="noopener"><span>Meadowlands May 16</span><small>meadowlandsmay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_M.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_M.pdf</small></a>
+<a class="link " href="M_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>M_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="M-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>M-RACE1-PACE.pdf</small></a>
+<a class="link " href="M-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>M-RACE2-PACE.pdf</small></a>
+<a class="link " href="M-RACE3-TROT.pdf" target="_blank" rel="noopener"><span>Race 3 – Trot</span><small>M-RACE3-TROT.pdf</small></a>
+<a class="link " href="M-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>M-RACE4-PACE.pdf</small></a>
+<a class="link " href="M-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>M-RACE5-PACE.pdf</small></a>
+<a class="link " href="M-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>M-RACE6-PACE.pdf</small></a>
+<a class="link " href="M-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>M-RACE7-PACE.pdf</small></a>
+<a class="link " href="M-RACE8-TROT.pdf" target="_blank" rel="noopener"><span>Race 8 – Trot</span><small>M-RACE8-TROT.pdf</small></a>
+<a class="link " href="M-RACE9-TROT.pdf" target="_blank" rel="noopener"><span>Race 9 – Trot</span><small>M-RACE9-TROT.pdf</small></a>
+<a class="link " href="M-RACE10-TROT.pdf" target="_blank" rel="noopener"><span>Race 10 – Trot</span><small>M-RACE10-TROT.pdf</small></a>
+<a class="link " href="M-RACE11-PACE.pdf" target="_blank" rel="noopener"><span>Race 11 – Pace</span><small>M-RACE11-PACE.pdf</small></a>
+<a class="link " href="M-RACE12-PACE.pdf" target="_blank" rel="noopener"><span>Race 12 – Pace</span><small>M-RACE12-PACE.pdf</small></a>
+<a class="link " href="M-RACE13-TROT.pdf" target="_blank" rel="noopener"><span>Race 13 – Trot</span><small>M-RACE13-TROT.pdf</small></a>
+<a class="link " href="M-RACE14-PACE.pdf" target="_blank" rel="noopener"><span>Race 14 – Pace</span><small>M-RACE14-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="NFLD">NFLD</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link " href="northfieldmay16.pdf" target="_blank" rel="noopener"><span>Northfield May 16</span><small>northfieldmay16.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="NTSD">Northside Downs</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_NTSD_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_NTSD_20260516.html</small></a>
+<a class="link " href="northsidemay16.pdf" target="_blank" rel="noopener"><span>Northside May 16</span><small>northsidemay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_NTSD.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_NTSD.pdf</small></a>
+<a class="link " href="NTSD_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>NTSD_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="NTSD-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>NTSD-RACE1-PACE.pdf</small></a>
+<a class="link " href="NTSD-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>NTSD-RACE2-PACE.pdf</small></a>
+<a class="link " href="NTSD-RACE3-PACE.pdf" target="_blank" rel="noopener"><span>Race 3 – Pace</span><small>NTSD-RACE3-PACE.pdf</small></a>
+<a class="link " href="NTSD-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>NTSD-RACE4-PACE.pdf</small></a>
+<a class="link " href="NTSD-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>NTSD-RACE5-PACE.pdf</small></a>
+<a class="link " href="NTSD-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>NTSD-RACE6-PACE.pdf</small></a>
+<a class="link " href="NTSD-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>NTSD-RACE7-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="OAKGR">Oak Grove</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_OAKGR_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_OAKGR_20260516.html</small></a>
+<a class="link " href="oakgrovemay16.pdf" target="_blank" rel="noopener"><span>Oakgrove May 16</span><small>oakgrovemay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_OAKGR.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_OAKGR.pdf</small></a>
+<a class="link " href="OAKGR_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>OAKGR_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="OAKGR-RACE1-TROT.pdf" target="_blank" rel="noopener"><span>Race 1 – Trot</span><small>OAKGR-RACE1-TROT.pdf</small></a>
+<a class="link " href="OAKGR-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>OAKGR-RACE2-PACE.pdf</small></a>
+<a class="link " href="OAKGR-RACE3-PACE.pdf" target="_blank" rel="noopener"><span>Race 3 – Pace</span><small>OAKGR-RACE3-PACE.pdf</small></a>
+<a class="link " href="OAKGR-RACE4-TROT.pdf" target="_blank" rel="noopener"><span>Race 4 – Trot</span><small>OAKGR-RACE4-TROT.pdf</small></a>
+<a class="link " href="OAKGR-RACE5-TROT.pdf" target="_blank" rel="noopener"><span>Race 5 – Trot</span><small>OAKGR-RACE5-TROT.pdf</small></a>
+<a class="link " href="OAKGR-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>OAKGR-RACE6-PACE.pdf</small></a>
+<a class="link " href="OAKGR-RACE7-TROT.pdf" target="_blank" rel="noopener"><span>Race 7 – Trot</span><small>OAKGR-RACE7-TROT.pdf</small></a>
+<a class="link " href="OAKGR-RACE8-TROT.pdf" target="_blank" rel="noopener"><span>Race 8 – Trot</span><small>OAKGR-RACE8-TROT.pdf</small></a>
+<a class="link " href="OAKGR-RACE9-TROT.pdf" target="_blank" rel="noopener"><span>Race 9 – Trot</span><small>OAKGR-RACE9-TROT.pdf</small></a>
+<a class="link " href="OAKGR-RACE10-TROT.pdf" target="_blank" rel="noopener"><span>Race 10 – Trot</span><small>OAKGR-RACE10-TROT.pdf</small></a>
+<a class="link " href="OAKGR-RACE11-TROT.pdf" target="_blank" rel="noopener"><span>Race 11 – Trot</span><small>OAKGR-RACE11-TROT.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="PRC">Plainridge</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_PRC_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_PRC_20260516.html</small></a>
+<a class="link " href="plainridgemay16.pdf" target="_blank" rel="noopener"><span>Plainridge May 16</span><small>plainridgemay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_PRC.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_PRC.pdf</small></a>
+<a class="link " href="PRC_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>PRC_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="PRC-RACE1-TROT.pdf" target="_blank" rel="noopener"><span>Race 1 – Trot</span><small>PRC-RACE1-TROT.pdf</small></a>
+<a class="link " href="PRC-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>PRC-RACE2-PACE.pdf</small></a>
+<a class="link " href="PRC-RACE3-TROT.pdf" target="_blank" rel="noopener"><span>Race 3 – Trot</span><small>PRC-RACE3-TROT.pdf</small></a>
+<a class="link " href="PRC-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>PRC-RACE4-PACE.pdf</small></a>
+<a class="link " href="PRC-RACE5-TROT.pdf" target="_blank" rel="noopener"><span>Race 5 – Trot</span><small>PRC-RACE5-TROT.pdf</small></a>
+<a class="link " href="PRC-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>PRC-RACE6-PACE.pdf</small></a>
+<a class="link " href="PRC-RACE7-TROT.pdf" target="_blank" rel="noopener"><span>Race 7 – Trot</span><small>PRC-RACE7-TROT.pdf</small></a>
+<a class="link " href="PRC-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>PRC-RACE8-PACE.pdf</small></a>
+<a class="link " href="PRC-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>PRC-RACE9-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="PCD">Pocono Downs</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_PCD_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_PCD_20260516.html</small></a>
+<a class="link " href="poconomay16.pdf" target="_blank" rel="noopener"><span>Pocono May 16</span><small>poconomay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_PCD.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_PCD.pdf</small></a>
+<a class="link " href="PCD_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>PCD_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="PCD-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>PCD-RACE1-PACE.pdf</small></a>
+<a class="link " href="PCD-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>PCD-RACE2-PACE.pdf</small></a>
+<a class="link " href="PCD-RACE3-TROT.pdf" target="_blank" rel="noopener"><span>Race 3 – Trot</span><small>PCD-RACE3-TROT.pdf</small></a>
+<a class="link " href="PCD-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>PCD-RACE4-PACE.pdf</small></a>
+<a class="link " href="PCD-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>PCD-RACE5-PACE.pdf</small></a>
+<a class="link " href="PCD-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>PCD-RACE6-PACE.pdf</small></a>
+<a class="link " href="PCD-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>PCD-RACE7-PACE.pdf</small></a>
+<a class="link " href="PCD-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>PCD-RACE8-PACE.pdf</small></a>
+<a class="link " href="PCD-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>PCD-RACE9-PACE.pdf</small></a>
+<a class="link " href="PCD-RACE10-PACE.pdf" target="_blank" rel="noopener"><span>Race 10 – Pace</span><small>PCD-RACE10-PACE.pdf</small></a>
+<a class="link " href="PCD-RACE11-PACE.pdf" target="_blank" rel="noopener"><span>Race 11 – Pace</span><small>PCD-RACE11-PACE.pdf</small></a>
+<a class="link " href="PCD-RACE12-PACE.pdf" target="_blank" rel="noopener"><span>Race 12 – Pace</span><small>PCD-RACE12-PACE.pdf</small></a>
+<a class="link " href="PCD-RACE13-PACE.pdf" target="_blank" rel="noopener"><span>Race 13 – Pace</span><small>PCD-RACE13-PACE.pdf</small></a>
+<a class="link " href="PCD-RACE14-PACE.pdf" target="_blank" rel="noopener"><span>Race 14 – Pace</span><small>PCD-RACE14-PACE.pdf</small></a>
+<a class="link " href="PCD-RACE15-PACE.pdf" target="_blank" rel="noopener"><span>Race 15 – Pace</span><small>PCD-RACE15-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="RCR">Rosecroft</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_RCR_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_RCR_20260516.html</small></a>
+<a class="link " href="rosecroftmay16.pdf" target="_blank" rel="noopener"><span>Rosecroft May 16</span><small>rosecroftmay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_RCR.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_RCR.pdf</small></a>
+<a class="link " href="RCR_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>RCR_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="RCR-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>RCR-RACE1-PACE.pdf</small></a>
+<a class="link " href="RCR-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>RCR-RACE2-PACE.pdf</small></a>
+<a class="link " href="RCR-RACE3-PACE.pdf" target="_blank" rel="noopener"><span>Race 3 – Pace</span><small>RCR-RACE3-PACE.pdf</small></a>
+<a class="link " href="RCR-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>RCR-RACE4-PACE.pdf</small></a>
+<a class="link " href="RCR-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>RCR-RACE5-PACE.pdf</small></a>
+<a class="link " href="RCR-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>RCR-RACE6-PACE.pdf</small></a>
+<a class="link " href="RCR-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>RCR-RACE7-PACE.pdf</small></a>
+<a class="link " href="RCR-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>RCR-RACE8-PACE.pdf</small></a>
+<a class="link " href="RCR-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>RCR-RACE9-PACE.pdf</small></a>
+<a class="link " href="RCR-RACE10-PACE.pdf" target="_blank" rel="noopener"><span>Race 10 – Pace</span><small>RCR-RACE10-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="SHEN">SHEN</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link " href="shenandoahmay16.pdf" target="_blank" rel="noopener"><span>Shenandoah May 16</span><small>shenandoahmay16.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="STGA">Saratoga</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_STGA_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_STGA_20260516.html</small></a>
+<a class="link " href="saratogamay16.pdf" target="_blank" rel="noopener"><span>Saratoga May 16</span><small>saratogamay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_STGA.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_STGA.pdf</small></a>
+<a class="link " href="STGA_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>STGA_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="STGA-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>STGA-RACE1-PACE.pdf</small></a>
+<a class="link " href="STGA-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>STGA-RACE2-PACE.pdf</small></a>
+<a class="link " href="STGA-RACE3-PACE.pdf" target="_blank" rel="noopener"><span>Race 3 – Pace</span><small>STGA-RACE3-PACE.pdf</small></a>
+<a class="link " href="STGA-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>STGA-RACE4-PACE.pdf</small></a>
+<a class="link " href="STGA-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>STGA-RACE5-PACE.pdf</small></a>
+<a class="link " href="STGA-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>STGA-RACE6-PACE.pdf</small></a>
+<a class="link " href="STGA-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>STGA-RACE7-PACE.pdf</small></a>
+<a class="link " href="STGA-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>STGA-RACE8-PACE.pdf</small></a>
+<a class="link " href="STGA-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>STGA-RACE9-PACE.pdf</small></a>
+<a class="link " href="STGA-RACE10-PACE.pdf" target="_blank" rel="noopener"><span>Race 10 – Pace</span><small>STGA-RACE10-PACE.pdf</small></a>
+<a class="link " href="STGA-RACE11-PACE.pdf" target="_blank" rel="noopener"><span>Race 11 – Pace</span><small>STGA-RACE11-PACE.pdf</small></a>
+<a class="link " href="STGA-RACE12-PACE.pdf" target="_blank" rel="noopener"><span>Race 12 – Pace</span><small>STGA-RACE12-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="SCD">Scioto Downs</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_SCD_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_SCD_20260516.html</small></a>
+<a class="link " href="sciotodownsmay16.pdf" target="_blank" rel="noopener"><span>Sciotodowns May 16</span><small>sciotodownsmay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_SCD.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_SCD.pdf</small></a>
+<a class="link " href="SCD_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>SCD_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="SCD-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>SCD-RACE1-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>SCD-RACE2-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE3-PACE.pdf" target="_blank" rel="noopener"><span>Race 3 – Pace</span><small>SCD-RACE3-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>SCD-RACE4-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>SCD-RACE5-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>SCD-RACE6-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>SCD-RACE7-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>SCD-RACE8-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>SCD-RACE9-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE10-PACE.pdf" target="_blank" rel="noopener"><span>Race 10 – Pace</span><small>SCD-RACE10-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE11-PACE.pdf" target="_blank" rel="noopener"><span>Race 11 – Pace</span><small>SCD-RACE11-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE12-PACE.pdf" target="_blank" rel="noopener"><span>Race 12 – Pace</span><small>SCD-RACE12-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE13-PACE.pdf" target="_blank" rel="noopener"><span>Race 13 – Pace</span><small>SCD-RACE13-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE14-PACE.pdf" target="_blank" rel="noopener"><span>Race 14 – Pace</span><small>SCD-RACE14-PACE.pdf</small></a>
+<a class="link " href="SCD-RACE15-PACE.pdf" target="_blank" rel="noopener"><span>Race 15 – Pace</span><small>SCD-RACE15-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="MEA">The Meadows</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_MEA_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_MEA_20260516.html</small></a>
+<a class="link " href="meadowsmay16.pdf" target="_blank" rel="noopener"><span>Meadows May 16</span><small>meadowsmay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_MEA.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_MEA.pdf</small></a>
+<a class="link " href="MEA_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>MEA_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="MEA-RACE1-TROT.pdf" target="_blank" rel="noopener"><span>Race 1 – Trot</span><small>MEA-RACE1-TROT.pdf</small></a>
+<a class="link " href="MEA-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>MEA-RACE2-PACE.pdf</small></a>
+<a class="link " href="MEA-RACE3-TROT.pdf" target="_blank" rel="noopener"><span>Race 3 – Trot</span><small>MEA-RACE3-TROT.pdf</small></a>
+<a class="link " href="MEA-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>MEA-RACE4-PACE.pdf</small></a>
+<a class="link " href="MEA-RACE5-TROT.pdf" target="_blank" rel="noopener"><span>Race 5 – Trot</span><small>MEA-RACE5-TROT.pdf</small></a>
+<a class="link " href="MEA-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>MEA-RACE6-PACE.pdf</small></a>
+<a class="link " href="MEA-RACE7-TROT.pdf" target="_blank" rel="noopener"><span>Race 7 – Trot</span><small>MEA-RACE7-TROT.pdf</small></a>
+<a class="link " href="MEA-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>MEA-RACE8-PACE.pdf</small></a>
+<a class="link " href="MEA-RACE9-TROT.pdf" target="_blank" rel="noopener"><span>Race 9 – Trot</span><small>MEA-RACE9-TROT.pdf</small></a>
+<a class="link " href="MEA-RACE10-PACE.pdf" target="_blank" rel="noopener"><span>Race 10 – Pace</span><small>MEA-RACE10-PACE.pdf</small></a>
+<a class="link " href="MEA-RACE11-TROT.pdf" target="_blank" rel="noopener"><span>Race 11 – Trot</span><small>MEA-RACE11-TROT.pdf</small></a>
+<a class="link " href="MEA-RACE12-PACE.pdf" target="_blank" rel="noopener"><span>Race 12 – Pace</span><small>MEA-RACE12-PACE.pdf</small></a>
+<a class="link " href="MEA-RACE13-TROT.pdf" target="_blank" rel="noopener"><span>Race 13 – Trot</span><small>MEA-RACE13-TROT.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="TGDN">Tioga Downs</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_TGDN_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_TGDN_20260516.html</small></a>
+<a class="link " href="tiogadsownsmay16.pdf" target="_blank" rel="noopener"><span>Tiogadsowns May 16</span><small>tiogadsownsmay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_TGDN.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_TGDN.pdf</small></a>
+<a class="link " href="TGDN_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>TGDN_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="TGDN-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>TGDN-RACE1-PACE.pdf</small></a>
+<a class="link " href="TGDN-RACE2-TROT.pdf" target="_blank" rel="noopener"><span>Race 2 – Trot</span><small>TGDN-RACE2-TROT.pdf</small></a>
+<a class="link " href="TGDN-RACE3-PACE.pdf" target="_blank" rel="noopener"><span>Race 3 – Pace</span><small>TGDN-RACE3-PACE.pdf</small></a>
+<a class="link " href="TGDN-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>TGDN-RACE4-PACE.pdf</small></a>
+<a class="link " href="TGDN-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>TGDN-RACE5-PACE.pdf</small></a>
+<a class="link " href="TGDN-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>TGDN-RACE6-PACE.pdf</small></a>
+<a class="link " href="TGDN-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>TGDN-RACE7-PACE.pdf</small></a>
+<a class="link " href="TGDN-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>TGDN-RACE8-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="VD">Vernon Downs</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_VD_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_VD_20260516.html</small></a>
+<a class="link " href="vernondownsmay16.pdf" target="_blank" rel="noopener"><span>Vernondowns May 16</span><small>vernondownsmay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_VD.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_VD.pdf</small></a>
+<a class="link " href="VD_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>VD_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="VD-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>VD-RACE1-PACE.pdf</small></a>
+<a class="link " href="VD-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>VD-RACE2-PACE.pdf</small></a>
+<a class="link " href="VD-RACE3-PACE.pdf" target="_blank" rel="noopener"><span>Race 3 – Pace</span><small>VD-RACE3-PACE.pdf</small></a>
+<a class="link " href="VD-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>VD-RACE4-PACE.pdf</small></a>
+<a class="link " href="VD-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>VD-RACE5-PACE.pdf</small></a>
+<a class="link " href="VD-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>VD-RACE6-PACE.pdf</small></a>
+<a class="link " href="VD-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>VD-RACE7-PACE.pdf</small></a>
+<a class="link " href="VD-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>VD-RACE8-PACE.pdf</small></a>
+<a class="link " href="VD-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>VD-RACE9-PACE.pdf</small></a>
+<a class="link " href="VD-RACE10-PACE.pdf" target="_blank" rel="noopener"><span>Race 10 – Pace</span><small>VD-RACE10-PACE.pdf</small></a>
+<a class="link " href="VD-RACE11-PACE.pdf" target="_blank" rel="noopener"><span>Race 11 – Pace</span><small>VD-RACE11-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="WBSB">Woodbine Mohawk</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_WBSB_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_WBSB_20260516.html</small></a>
+<a class="link " href="woodbinemay16.pdf" target="_blank" rel="noopener"><span>Woodbine May 16</span><small>woodbinemay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_WBSB.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_WBSB.pdf</small></a>
+<a class="link " href="WBSB_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>WBSB_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="WBSB-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>WBSB-RACE1-PACE.pdf</small></a>
+<a class="link " href="WBSB-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>WBSB-RACE2-PACE.pdf</small></a>
+<a class="link " href="WBSB-RACE3-TROT.pdf" target="_blank" rel="noopener"><span>Race 3 – Trot</span><small>WBSB-RACE3-TROT.pdf</small></a>
+<a class="link " href="WBSB-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>WBSB-RACE4-PACE.pdf</small></a>
+<a class="link " href="WBSB-RACE5-PACE.pdf" target="_blank" rel="noopener"><span>Race 5 – Pace</span><small>WBSB-RACE5-PACE.pdf</small></a>
+<a class="link " href="WBSB-RACE6-TROT.pdf" target="_blank" rel="noopener"><span>Race 6 – Trot</span><small>WBSB-RACE6-TROT.pdf</small></a>
+<a class="link " href="WBSB-RACE7-PACE.pdf" target="_blank" rel="noopener"><span>Race 7 – Pace</span><small>WBSB-RACE7-PACE.pdf</small></a>
+<a class="link " href="WBSB-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>WBSB-RACE8-PACE.pdf</small></a>
+<a class="link " href="WBSB-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>WBSB-RACE9-PACE.pdf</small></a>
+<a class="link " href="WBSB-RACE10-PACE.pdf" target="_blank" rel="noopener"><span>Race 10 – Pace</span><small>WBSB-RACE10-PACE.pdf</small></a>
+<a class="link " href="WBSB-RACE11-PACE.pdf" target="_blank" rel="noopener"><span>Race 11 – Pace</span><small>WBSB-RACE11-PACE.pdf</small></a>
+<a class="link " href="WBSB-RACE12-PACE.pdf" target="_blank" rel="noopener"><span>Race 12 – Pace</span><small>WBSB-RACE12-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="WDSTK">Woodstock</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_WDSTK_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_WDSTK_20260516.html</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_WDSTK.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_WDSTK.pdf</small></a>
+<a class="link " href="WDSTK_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>WDSTK_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="WDSTK-RACE1-TROT.pdf" target="_blank" rel="noopener"><span>Race 1 – Trot</span><small>WDSTK-RACE1-TROT.pdf</small></a>
+<a class="link " href="WDSTK-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>WDSTK-RACE2-PACE.pdf</small></a>
+<a class="link " href="WDSTK-RACE3-TROT.pdf" target="_blank" rel="noopener"><span>Race 3 – Trot</span><small>WDSTK-RACE3-TROT.pdf</small></a>
+<a class="link " href="WDSTK-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>WDSTK-RACE4-PACE.pdf</small></a>
+<a class="link " href="WDSTK-RACE5-TROT.pdf" target="_blank" rel="noopener"><span>Race 5 – Trot</span><small>WDSTK-RACE5-TROT.pdf</small></a>
+<a class="link " href="WDSTK-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>WDSTK-RACE6-PACE.pdf</small></a>
+<a class="link " href="WDSTK-RACE7-TROT.pdf" target="_blank" rel="noopener"><span>Race 7 – Trot</span><small>WDSTK-RACE7-TROT.pdf</small></a>
+<a class="link " href="WDSTK-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>WDSTK-RACE8-PACE.pdf</small></a>
+<a class="link " href="WDSTK-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>WDSTK-RACE9-PACE.pdf</small></a>
+<a class="link " href="WDSTK-RACE10-TROT.pdf" target="_blank" rel="noopener"><span>Race 10 – Trot</span><small>WDSTK-RACE10-TROT.pdf</small></a>
+<a class="link " href="WDSTK-RACE11-TROT.pdf" target="_blank" rel="noopener"><span>Race 11 – Trot</span><small>WDSTK-RACE11-TROT.pdf</small></a>
+<a class="link " href="WDSTK-RACE12-PACE.pdf" target="_blank" rel="noopener"><span>Race 12 – Pace</span><small>WDSTK-RACE12-PACE.pdf</small></a>
+<a class="link " href="WDSTK-RACE13-TROT.pdf" target="_blank" rel="noopener"><span>Race 13 – Trot</span><small>WDSTK-RACE13-TROT.pdf</small></a>
+<a class="link " href="WDSTK-RACE14-PACE.pdf" target="_blank" rel="noopener"><span>Race 14 – Pace</span><small>WDSTK-RACE14-PACE.pdf</small></a>
+<a class="link " href="WDSTK-RACE15-PACE.pdf" target="_blank" rel="noopener"><span>Race 15 – Pace</span><small>WDSTK-RACE15-PACE.pdf</small></a>
+</div></div>
+</section>
+<h2 class="section-title" id="YR">Yonkers</h2><section class="card track-card">
+<div class="category"><h4>Track Files</h4><div class="report-row">
+<a class="link primary" href="TipSheet_YR_20260516.html" target="_blank" rel="noopener"><span>Tip Sheet</span><small>TipSheet_YR_20260516.html</small></a>
+<a class="link " href="yonkersmay16.pdf" target="_blank" rel="noopener"><span>Yonkers May 16</span><small>yonkersmay16.pdf</small></a>
+<a class="link " href="Racecards_Intelligence_Report_20260516_Readable_v18_YR.pdf" target="_blank" rel="noopener"><span>Racecards Intelligence Report</span><small>Racecards_Intelligence_Report_20260516_Readable_v18_YR.pdf</small></a>
+<a class="link " href="YR_LeadThreatIndex_20260516.pdf" target="_blank" rel="noopener"><span>Lead Threat Index</span><small>YR_LeadThreatIndex_20260516.pdf</small></a>
+</div></div>
+<div class="category"><h4>Race Pace Reports</h4><div class="race-grid">
+<a class="link " href="YR-RACE1-PACE.pdf" target="_blank" rel="noopener"><span>Race 1 – Pace</span><small>YR-RACE1-PACE.pdf</small></a>
+<a class="link " href="YR-RACE2-PACE.pdf" target="_blank" rel="noopener"><span>Race 2 – Pace</span><small>YR-RACE2-PACE.pdf</small></a>
+<a class="link " href="YR-RACE3-PACE.pdf" target="_blank" rel="noopener"><span>Race 3 – Pace</span><small>YR-RACE3-PACE.pdf</small></a>
+<a class="link " href="YR-RACE4-PACE.pdf" target="_blank" rel="noopener"><span>Race 4 – Pace</span><small>YR-RACE4-PACE.pdf</small></a>
+<a class="link " href="YR-RACE5-TROT.pdf" target="_blank" rel="noopener"><span>Race 5 – Trot</span><small>YR-RACE5-TROT.pdf</small></a>
+<a class="link " href="YR-RACE6-PACE.pdf" target="_blank" rel="noopener"><span>Race 6 – Pace</span><small>YR-RACE6-PACE.pdf</small></a>
+<a class="link " href="YR-RACE7-TROT.pdf" target="_blank" rel="noopener"><span>Race 7 – Trot</span><small>YR-RACE7-TROT.pdf</small></a>
+<a class="link " href="YR-RACE8-PACE.pdf" target="_blank" rel="noopener"><span>Race 8 – Pace</span><small>YR-RACE8-PACE.pdf</small></a>
+<a class="link " href="YR-RACE9-PACE.pdf" target="_blank" rel="noopener"><span>Race 9 – Pace</span><small>YR-RACE9-PACE.pdf</small></a>
+</div></div>
+</section>
+</div></main><footer>Harness Elite • Complete daily index</footer></body></html>
