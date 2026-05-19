@@ -1,1 +1,459 @@
 
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harness Elite Daily Index — May 18, 2026</title>
+  <style>
+    :root {
+      --bg:#0f172a; --panel:#111827; --card:#ffffff; --ink:#111827; --muted:#64748b;
+      --brand:#0ea5e9; --line:#e5e7eb; --soft:#f8fafc;
+    }
+    * { box-sizing:border-box; }
+    body {
+      margin:0; font-family:Arial, Helvetica, sans-serif; background:var(--bg); color:var(--ink);
+    }
+    .hero {
+      padding:34px 24px 24px; color:#fff; background:linear-gradient(135deg,#020617,#0f172a 55%,#075985);
+    }
+    .hero-inner { max-width:1180px; margin:0 auto; }
+    h1 { margin:0 0 8px; font-size:34px; letter-spacing:-.03em; }
+    .sub { color:#cbd5e1; font-size:15px; }
+    .wrap { max-width:1180px; margin:0 auto; padding:22px 18px 40px; }
+    .summary {
+      display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:12px; margin-bottom:18px;
+    }
+    .stat {
+      background:#fff; border-radius:16px; padding:16px; box-shadow:0 10px 25px rgba(2,6,23,.14);
+    }
+    .stat b { display:block; font-size:25px; }
+    .stat span { color:var(--muted); font-size:13px; }
+    .track-card {
+      background:#fff; border-radius:20px; margin:16px 0; overflow:hidden; border:1px solid var(--line);
+      box-shadow:0 10px 25px rgba(2,6,23,.10);
+    }
+    .track-head {
+      display:flex; justify-content:space-between; gap:12px; align-items:center;
+      padding:18px 20px; background:#f8fafc; border-bottom:1px solid var(--line);
+    }
+    .track-head h2 { margin:0; font-size:22px; }
+    .badge { background:#e0f2fe; color:#075985; padding:6px 10px; border-radius:999px; font-size:12px; font-weight:700; }
+    .section { padding:16px 20px 18px; border-bottom:1px solid var(--line); }
+    .section:last-child { border-bottom:0; }
+    .section h3 { margin:0 0 10px; font-size:14px; text-transform:uppercase; letter-spacing:.08em; color:#334155; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(235px,1fr)); gap:8px; }
+    a.file {
+      display:block; text-decoration:none; color:#0f172a; background:#fff; border:1px solid var(--line);
+      border-radius:12px; padding:11px 12px; font-size:14px; line-height:1.25; transition:.15s ease;
+      overflow-wrap:anywhere;
+    }
+    a.file:hover { border-color:var(--brand); transform:translateY(-1px); box-shadow:0 6px 14px rgba(14,165,233,.15); }
+    .small { color:var(--muted); font-size:12px; margin-top:4px; }
+    .footer { text-align:center; color:#94a3b8; font-size:12px; margin-top:28px; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <h1>Harness Elite Daily Index</h1>
+      <div class="sub">May 18, 2026 • Complete report hub • All links open in a new tab</div>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <div class="summary">
+      <div class="stat"><b>155</b><span>Total linked files</span></div>
+      <div class="stat"><b>10</b><span>Active track cards</span></div>
+      <div class="stat"><b>114</b><span>Race pace PDFs</span></div>
+      <div class="stat"><b>10</b><span>HTML tipsheets</span></div>
+    </div>
+
+    <div id="cards"></div>
+
+    <div class="footer">Harness Elite • Confidential Daily Racing Reports</div>
+  </main>
+
+  <script>
+    const tracks = [
+      {
+            "code": "HAR",
+            "name": "Harrington",
+            "files": {
+                  "tipsheets": [
+                        "TipSheet_HAR_20260518.html"
+                  ],
+                  "trackpdf": [
+                        "harringtonmay18.pdf"
+                  ],
+                  "racecards": [
+                        "Racecards_Intelligence_Report_20260518_Readable_v18_HAR.pdf"
+                  ],
+                  "lead": [
+                        "HAR_LeadThreatIndex_20260518.pdf"
+                  ],
+                  "pace": [
+                        "HAR-RACE1-PACE.pdf",
+                        "HAR-RACE2-PACE.pdf",
+                        "HAR-RACE3-PACE.pdf",
+                        "HAR-RACE4-PACE.pdf",
+                        "HAR-RACE5-PACE.pdf",
+                        "HAR-RACE6-PACE.pdf",
+                        "HAR-RACE7-PACE.pdf",
+                        "HAR-RACE8-PACE.pdf",
+                        "HAR-RACE9-PACE.pdf",
+                        "HAR-RACE10-PACE.pdf",
+                        "HAR-RACE11-PACE.pdf",
+                        "HAR-RACE12-PACE.pdf",
+                        "HAR-RACE13-PACE.pdf",
+                        "HAR-RACE14-PACE.pdf",
+                        "HAR-RACE15-PACE.pdf"
+                  ]
+            }
+      },
+      {
+            "code": "LON",
+            "name": "London / Western Fair",
+            "files": {
+                  "tipsheets": [
+                        "TipSheet_LON_20260518.html"
+                  ],
+                  "trackpdf": [
+                        "westernfairmay18.pdf"
+                  ],
+                  "racecards": [
+                        "Racecards_Intelligence_Report_20260518_Readable_v18_LON.pdf"
+                  ],
+                  "lead": [
+                        "LON_LeadThreatIndex_20260518.pdf"
+                  ],
+                  "pace": [
+                        "LON-RACE1-PACE.pdf",
+                        "LON-RACE2-PACE.pdf",
+                        "LON-RACE3-PACE.pdf",
+                        "LON-RACE4-PACE.pdf",
+                        "LON-RACE5-PACE.pdf",
+                        "LON-RACE6-PACE.pdf",
+                        "LON-RACE7-TROT.pdf",
+                        "LON-RACE8-PACE.pdf",
+                        "LON-RACE9-TROT.pdf",
+                        "LON-RACE10-PACE.pdf",
+                        "LON-RACE11-PACE.pdf",
+                        "LON-RACE12-PACE.pdf",
+                        "LON-RACE13-PACE.pdf"
+                  ]
+            }
+      },
+      {
+            "code": "OAKGR",
+            "name": "Oak Grove",
+            "files": {
+                  "tipsheets": [
+                        "TipSheet_OAKGR_20260518.html"
+                  ],
+                  "trackpdf": [
+                        "oakgrovemay18.pdf"
+                  ],
+                  "racecards": [
+                        "Racecards_Intelligence_Report_20260518_Readable_v18_OAKGR.pdf"
+                  ],
+                  "lead": [
+                        "OAKGR_LeadThreatIndex_20260518.pdf"
+                  ],
+                  "pace": [
+                        "OAKGR-RACE1-PACE.pdf",
+                        "OAKGR-RACE2-PACE.pdf",
+                        "OAKGR-RACE3-PACE.pdf",
+                        "OAKGR-RACE4-PACE.pdf",
+                        "OAKGR-RACE5-PACE.pdf",
+                        "OAKGR-RACE6-PACE.pdf",
+                        "OAKGR-RACE7-PACE.pdf",
+                        "OAKGR-RACE8-PACE.pdf",
+                        "OAKGR-RACE9-PACE.pdf",
+                        "OAKGR-RACE10-PACE.pdf",
+                        "OAKGR-RACE11-PACE.pdf",
+                        "OAKGR-RACE12-PACE.pdf",
+                        "OAKGR-RACE13-PACE.pdf"
+                  ]
+            }
+      },
+      {
+            "code": "OD",
+            "name": "Ocean Downs",
+            "files": {
+                  "tipsheets": [
+                        "TipSheet_OD_20260518.html"
+                  ],
+                  "trackpdf": [
+                        "oceandownsmay18.pdf"
+                  ],
+                  "racecards": [
+                        "Racecards_Intelligence_Report_20260518_Readable_v18_OD.pdf"
+                  ],
+                  "lead": [
+                        "OD_LeadThreatIndex_20260518.pdf"
+                  ],
+                  "pace": [
+                        "OD-RACE1-PACE.pdf",
+                        "OD-RACE2-PACE.pdf",
+                        "OD-RACE3-PACE.pdf",
+                        "OD-RACE4-PACE.pdf",
+                        "OD-RACE5-PACE.pdf",
+                        "OD-RACE6-PACE.pdf",
+                        "OD-RACE7-TROT.pdf"
+                  ]
+            }
+      },
+      {
+            "code": "PCD",
+            "name": "Pocono Downs",
+            "files": {
+                  "tipsheets": [
+                        "TipSheet_PCD_20260518.html"
+                  ],
+                  "trackpdf": [
+                        "poconodownsmay18.pdf"
+                  ],
+                  "racecards": [
+                        "Racecards_Intelligence_Report_20260518_Readable_v18_PCD.pdf"
+                  ],
+                  "lead": [
+                        "PCD_LeadThreatIndex_20260518.pdf"
+                  ],
+                  "pace": [
+                        "PCD-RACE1-PACE.pdf",
+                        "PCD-RACE2-PACE.pdf",
+                        "PCD-RACE3-PACE.pdf",
+                        "PCD-RACE4-TROT.pdf",
+                        "PCD-RACE5-PACE.pdf",
+                        "PCD-RACE6-TROT.pdf",
+                        "PCD-RACE7-PACE.pdf",
+                        "PCD-RACE8-PACE.pdf",
+                        "PCD-RACE9-TROT.pdf",
+                        "PCD-RACE10-TROT.pdf",
+                        "PCD-RACE11-PACE.pdf",
+                        "PCD-RACE12-TROT.pdf",
+                        "PCD-RACE13-PACE.pdf",
+                        "PCD-RACE14-PACE.pdf",
+                        "PCD-RACE15-TROT.pdf"
+                  ]
+            }
+      },
+      {
+            "code": "PRC",
+            "name": "Plainridge",
+            "files": {
+                  "tipsheets": [
+                        "TipSheet_PRC_20260518.html"
+                  ],
+                  "trackpdf": [
+                        "plainridgemay18.pdf"
+                  ],
+                  "racecards": [
+                        "Racecards_Intelligence_Report_20260518_Readable_v18_PRC.pdf"
+                  ],
+                  "lead": [
+                        "PRC_LeadThreatIndex_20260518.pdf"
+                  ],
+                  "pace": [
+                        "PRC-RACE1-PACE.pdf",
+                        "PRC-RACE2-PACE.pdf",
+                        "PRC-RACE3-PACE.pdf",
+                        "PRC-RACE4-PACE.pdf",
+                        "PRC-RACE5-PACE.pdf",
+                        "PRC-RACE6-PACE.pdf",
+                        "PRC-RACE7-PACE.pdf",
+                        "PRC-RACE8-PACE.pdf",
+                        "PRC-RACE9-PACE.pdf",
+                        "PRC-RACE10-PACE.pdf"
+                  ]
+            }
+      },
+      {
+            "code": "STGA",
+            "name": "Saratoga",
+            "files": {
+                  "tipsheets": [
+                        "TipSheet_STGA_20260518.html"
+                  ],
+                  "trackpdf": [
+                        "saratogamay18.pdf"
+                  ],
+                  "racecards": [
+                        "Racecards_Intelligence_Report_20260518_Readable_v18_STGA.pdf"
+                  ],
+                  "lead": [
+                        "STGA_LeadThreatIndex_20260518.pdf"
+                  ],
+                  "pace": [
+                        "STGA-RACE1-TROT.pdf",
+                        "STGA-RACE2-TROT.pdf",
+                        "STGA-RACE3-TROT.pdf",
+                        "STGA-RACE4-PACE.pdf",
+                        "STGA-RACE5-TROT.pdf",
+                        "STGA-RACE6-TROT.pdf",
+                        "STGA-RACE7-TROT.pdf",
+                        "STGA-RACE8-TROT.pdf",
+                        "STGA-RACE9-TROT.pdf",
+                        "STGA-RACE10-TROT.pdf",
+                        "STGA-RACE11-TROT.pdf"
+                  ]
+            }
+      },
+      {
+            "code": "SUMM",
+            "name": "Summerside Downs",
+            "files": {
+                  "tipsheets": [
+                        "TipSheet_SUMM_20260518.html"
+                  ],
+                  "trackpdf": [
+                        "summersidemay18.pdf"
+                  ],
+                  "racecards": [
+                        "Racecards_Intelligence_Report_20260518_Readable_v18_SUMM.pdf"
+                  ],
+                  "lead": [
+                        "SUMM_LeadThreatIndex_20260518.pdf"
+                  ],
+                  "pace": [
+                        "SUMM-RACE1-PACE.pdf",
+                        "SUMM-RACE2-PACE.pdf",
+                        "SUMM-RACE3-PACE.pdf",
+                        "SUMM-RACE4-PACE.pdf",
+                        "SUMM-RACE5-PACE.pdf",
+                        "SUMM-RACE6-PACE.pdf",
+                        "SUMM-RACE7-PACE.pdf",
+                        "SUMM-RACE8-PACE.pdf",
+                        "SUMM-RACE9-PACE.pdf",
+                        "SUMM-RACE10-PACE.pdf",
+                        "SUMM-RACE11-PACE.pdf"
+                  ]
+            }
+      },
+      {
+            "code": "WBSB",
+            "name": "Woodbine Mohawk",
+            "files": {
+                  "tipsheets": [
+                        "TipSheet_WBSB_20260518.html"
+                  ],
+                  "trackpdf": [
+                        "woodbinemay18.pdf"
+                  ],
+                  "racecards": [
+                        "Racecards_Intelligence_Report_20260518_Readable_v18_WBSB.pdf"
+                  ],
+                  "lead": [
+                        "WBSB_LeadThreatIndex_20260518.pdf"
+                  ],
+                  "pace": [
+                        "WBSB-RACE1-TROT.pdf",
+                        "WBSB-RACE2-TROT.pdf",
+                        "WBSB-RACE3-TROT.pdf",
+                        "WBSB-RACE4-TROT.pdf",
+                        "WBSB-RACE5-PACE.pdf",
+                        "WBSB-RACE6-TROT.pdf",
+                        "WBSB-RACE7-TROT.pdf",
+                        "WBSB-RACE8-TROT.pdf",
+                        "WBSB-RACE9-TROT.pdf",
+                        "WBSB-RACE10-PACE.pdf"
+                  ]
+            }
+      },
+      {
+            "code": "YR",
+            "name": "Yonkers",
+            "files": {
+                  "tipsheets": [
+                        "TipSheet_YR_20260518.html"
+                  ],
+                  "trackpdf": [
+                        "yonkersmay18.pdf"
+                  ],
+                  "racecards": [
+                        "Racecards_Intelligence_Report_20260518_Readable_v18_YR.pdf"
+                  ],
+                  "lead": [
+                        "YR_LeadThreatIndex_20260518.pdf"
+                  ],
+                  "pace": [
+                        "YR-RACE1-PACE.pdf",
+                        "YR-RACE2-PACE.pdf",
+                        "YR-RACE3-PACE.pdf",
+                        "YR-RACE4-PACE.pdf",
+                        "YR-RACE5-PACE.pdf",
+                        "YR-RACE6-PACE.pdf",
+                        "YR-RACE7-PACE.pdf",
+                        "YR-RACE8-PACE.pdf",
+                        "YR-RACE9-PACE.pdf"
+                  ]
+            }
+      },
+      {
+            "code": "MR",
+            "name": "Monticello",
+            "files": {
+                  "tipsheets": [],
+                  "trackpdf": [
+                        "monticellomay18.pdf"
+                  ],
+                  "racecards": [],
+                  "lead": [],
+                  "pace": []
+            }
+      }
+];
+    const labels = {
+      tipsheets: "HTML Tipsheet",
+      trackpdf: "Track PDF",
+      racecards: "Racecards Intelligence Report",
+      lead: "Lead Threat Index",
+      pace: "Race Pace Reports"
+    };
+
+    function fileLabel(file) {
+      return file
+        .replace(/_/g, " ")
+        .replace(/-/g, " ")
+        .replace(/\.pdf$/i, "")
+        .replace(/\.html$/i, "");
+    }
+
+    function sectionHTML(type, files) {
+      if (!files || files.length === 0) return "";
+      return `
+        <section class="section">
+          <h3>${labels[type]}</h3>
+          <div class="grid">
+            ${files.map(file => `
+              <a class="file" href="${file}" target="_blank" rel="noopener">
+                ${fileLabel(file)}
+                <div class="small">${file}</div>
+              </a>
+            `).join("")}
+          </div>
+        </section>
+      `;
+    }
+
+    document.getElementById("cards").innerHTML = tracks.map(track => {
+      const total = Object.values(track.files).flat().length;
+      if (!total) return "";
+      return `
+        <article class="track-card">
+          <div class="track-head">
+            <h2>${track.name}</h2>
+            <div class="badge">${track.code} • ${total} files</div>
+          </div>
+          ${sectionHTML("tipsheets", track.files.tipsheets)}
+          ${sectionHTML("trackpdf", track.files.trackpdf)}
+          ${sectionHTML("racecards", track.files.racecards)}
+          ${sectionHTML("lead", track.files.lead)}
+          ${sectionHTML("pace", track.files.pace)}
+        </article>
+      `;
+    }).join("");
+  </script>
+</body>
+</html>
